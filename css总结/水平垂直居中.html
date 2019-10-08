@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水平垂直居中</title>
+
+    <style>
+    .box {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #eee;
+        text-align: center;
+    }
+
+    img {
+        max-width: 250px;
+        max-height: 250px;
+        border: 1px solid #e6e6e6;
+    }
+    /* before伪类居中 */
+    /* 在父元素上设置before,使其居中 */
+        .box1::before {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .box1 img {
+        /* 需要设置 vertical-align: middle; */
+        vertical-align: middle;
+    }
+
+    /* 定位 + transform 居中 */
+    .box2 img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    </style>
+</head>
+<body>
+    <!-- before伪类居中 -->
+    <div class="box box1">
+        <img src="https://qny.smzdm.com/201909/24/5d89b7c1e46683760.jpg_d250.jpg" alt="">
+    </div>
+    <br>
+    <br>
+    <!-- 定位 + transform 居中 -->
+    <div class="box box2">
+        <img src="https://y.zdmimg.com/201910/08/5d9c413f77dc05547.jpg_d250.jpg" alt="">
+    </div>
+</body>
+</html>
