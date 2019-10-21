@@ -1,0 +1,144 @@
+.z-side-head {
+    height: 44px;
+    line-height: 45px;
+    padding: 0 14px;
+    border-bottom: 1px solid #f5f5f5;
+    width: 300px;
+}
+
+/*	column流标题 */
+.z-side-title {
+    position: relative;
+    float: left;
+    white-space: nowrap;
+
+    .side-head-tab {
+        height: 45px;
+        & > span {
+            font-size: 16px;
+            display: inline-block;
+            margin-right: 20px;
+            cursor: pointer;
+            height: 100%;
+            box-sizing: border-box;
+            line-height: 47px;
+            &.active {
+                border-bottom: 2px solid rgb(240, 72, 72);
+            }
+            &::last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .z-special-fonts {
+        font-size: 24px;
+        vertical-align: 1px;
+        color: $text-black;
+    }
+
+    .mid-dot {
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        margin: 10px 0;
+        border-radius: 100%;
+        background-color: $mark-gray;
+        margin-right: 5px;
+    }
+
+    & > a {
+        font-size: 16px;
+        color: $text-black;
+    }
+
+    & > span {
+        font-size: 16px;
+        color: $text-black;
+    }
+}
+
+/*	column流更多链接 */
+.z-side-more {
+    float: right;
+
+    a,
+    span {
+        color: $text-lightgray;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    a:hover {
+        color: $link-blue;
+    }
+}
+
+/*	column流tips小提示 */
+.z-column-tips {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #fcdede;
+    background: rgba(240, 72, 72, 0.05);
+    color: $red;
+    font-size: $fsz-default;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 2px;
+    border-bottom-left-radius: 0;
+    margin-left: 13px;
+    padding-left: 8px;
+    padding-right: 2px;
+    vertical-align: top;
+
+    em {
+        border-color: transparent #fcdede #fcdede transparent;
+        margin: 0 2px 0 0;
+        position: absolute;
+        left: -9px;
+        top: 17px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -4px;
+            left: -1px;
+            border-color: transparent #fef6f6 #fef6f6 transparent;
+        }
+    }
+
+    em,
+    em::after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-width: 3px 4px 3px 4px;
+        border-style: solid;
+    }
+}
+
+/* 旅游页面 关注按钮 */
+.feed-side-lvyou {
+    .z-column-follow {
+        float: left;
+        width: 60px;
+        height: 28px;
+        border: 1px solid #fee4e4;
+        border-radius: 2px;
+        background: #feecec;
+        color: $red;
+        margin-top: -4px;
+        margin-left: 10px;
+        line-height: 28px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            background: #fef6f6;
+            border-color: #fef6f6;
+        }
+    }
+
+    .z-follow-plus {
+        font-size: 20px;
+    }
+}

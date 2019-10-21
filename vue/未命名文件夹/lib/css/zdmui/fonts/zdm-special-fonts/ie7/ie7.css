@@ -1,0 +1,70 @@
+.z-fonts-zero {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x30;');
+}
+.z-fonts-nine {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x39;');
+}
+.z-fonts-eight {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x38;');
+}
+.z-fonts-seven {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x37;');
+}
+.z-fonts-six {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x36;');
+}
+.z-fonts-five {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x35;');
+}
+.z-fonts-four {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x34;');
+}
+.z-fonts-three {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x33;');
+}
+.z-fonts-two {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x32;');
+}
+.z-fonts-one {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x31;');
+}
+.z-fonts-t {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x74;');
+}
+.z-fonts-n {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x6e;');
+}
+.z-fonts-i {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x69;');
+}
+.z-fonts-o {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x6f;');
+}
+.z-fonts-p {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x50;');
+}
+.z-fonts-colon {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xff1a;');
+}
+.z-fonts-tiao {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x6761;');
+}
+.z-fonts-tou {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x5934;');
+}
+.z-fonts-zhi {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x503c;');
+}
+.z-fonts-hao {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x597d;');
+}
+.z-fonts-jia {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x4ef7;');
+}
+.z-fonts-wen {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x6587;');
+}
+.z-fonts-wu {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x7269;');
+}
+

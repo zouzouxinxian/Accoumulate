@@ -1,0 +1,211 @@
+// 众测挂件样式
+.side-haowu-zhongce {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+
+    .find-more {
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        text-align: center;
+        color: #666;
+        margin: 0 auto;
+        display: block;
+        background: #f7f7f7;
+        border-radius: 2px;
+        margin-top: 14px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .side-slick-wrap {
+        height: 192px;
+        overflow: hidden;
+
+        .side-slick-window {
+            height: auto;
+
+            .side-slick {
+                & > button {
+                    top: 45px;
+                    margin-top: 0;
+                }
+
+                button.z-slick-btn-prev {
+                    left: 0;
+                }
+
+                button.z-slick-btn-next {
+                    right: 0;
+                }
+
+                .slick-pic {
+                    img {
+                        height: 136px;
+                    }
+                }
+
+                .side-slick-title {
+                    margin: 14px 0;
+                    
+                    .side-slick-text {
+                        text-align: left;
+                        float: left;
+
+                        &.nobtn {
+                            width: 100%;
+                            margin-right: 0;
+                        }
+
+                        &:hover {
+                            color: #5188a6;
+                        }
+                    }
+
+                    .z-btn {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+    .side-zhongce-ul {
+        margin-top: 8px;
+
+        .feed-hor {
+            margin: 0 14px 14px;
+            border: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &.last-feed {
+                margin: 14px 7px 0;
+            }
+
+            &:hover {
+                box-shadow: none;
+            }
+
+            .z-feed-content {
+                float: left;
+                padding-right: 0;
+                max-width: 206px;
+
+                .z-feed-title {
+                    font-size: 14px;
+                    line-height: 24px;
+                    height: 48px;
+                    margin-top: 0;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                .z-feed-foot {
+                    margin-top: 10px;
+                    font-size: 0;
+
+                    & > span {
+                        i {
+                            position: relative;
+                            top: 2px;
+                        }
+                    }
+
+                    .zc-comment {
+                        font-size: 0;
+                        display: inline-block;
+
+                        i {
+                            font-size: 16px;
+                            margin-right: 7px;
+                            color: #999;
+                        }
+
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .zhi-like-fav {
+                        position: relative;
+                        color: #999;
+                        display: inline-block;
+                        font-size: 0;
+
+                        i {
+                            font-size: 16px;
+                            margin-right: 7px;
+                        }
+
+                        .feed-number {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .active {
+                        .z-icon-thumb-up {
+                            color: #f04848;
+                        }
+
+                        .feed-number {
+                            color: #f04848;
+                        }
+                    }
+
+                    .feed-number {
+                        margin-right: 20px;
+                    }
+
+                    .one-plus {
+                        position: absolute;
+                        left: 15px;
+                        top: -15px;
+                        font-size: 18px;
+                        color: #f04848;
+                    }
+                }
+            }
+        }
+
+        &.hover-feed {
+            .z-feed-img {
+                display: none;
+            }
+
+            .z-feed-content {
+                padding: 0 $gap-block-inner/2;
+                height: 20px;
+            }
+
+            li.expand {
+                .z-feed-img {
+                    display: block;
+                }
+
+                .z-feed-content {
+                    height: auto;
+                }
+            }
+        }
+
+        .z-feed-img {
+            width: 80px;
+            height: 80px;
+            margin: 0 14px 0 0;
+
+            &:hover {
+                img {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}

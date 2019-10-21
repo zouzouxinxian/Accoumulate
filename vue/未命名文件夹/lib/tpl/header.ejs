@@ -1,0 +1,121 @@
+<% var files = htmlWebpackPlugin.files %>
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="//res.smzdm.com/pc/v1.0/dist/js/html5shiv.js"></script>
+    <![endif]-->
+    <title><%= data.title %></title>
+    <!-- 以下script标签对仅为防止本地统计方法报错，请勿嵌套！！！ -->
+    <script>
+        var dataLayer = [];
+    </script>
+    <!-- 勿嵌套标签对 end -->
+    <!-- css资源 -->
+    <% for (var i = 0; i < files.css.length; i++) { %>
+    <link rel="stylesheet" href="<%= files.css[i] %>">
+    <% } %>
+    <!-- js资源 -->
+    <% for (var i = 0; i < files.js.length; i++) { %>
+    <% if (/(\/manifest\.)|(\/vendors\.)|(\/framework\.)/.test(files.js[i])) { %>
+    <script src="<%= files.js[i] %>"></script>
+    <% } %>
+    <% } %>
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P6RFTX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=w.location.search.match(/55gtmpreview=1/)?
+            '//www.googletagmanager.com/gtm.js?id='+i+dl:'https://res-ga.smzdm.com/gtm.js?id=' + i + dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P6RFTX');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+<body>
+<header id="sub-header">
+    <%- require('lib/global/dist/nav-bar.ejs')({
+        isSubChannel:data.isSubChannel
+    }) %>
+    <!-- 搜索栏 -->
+    <% if(!data.isHideSubHeader){%>
+    <div id="global-search">
+        <div class="search-inner z-clearfix">
+            <div id="logo">
+                <a href="/">
+                    <svg width="151" height="48">
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="//res.smzdm.com/pc/v1.0/dist/img/embed/logo.svg" src="//res.smzdm.com/pc/v1.0/dist/img/embed/logo.png" width="151" height="48"></image>
+                    </svg>
+                </a>
+            </div>
+            <% if(data.notCommon){%>
+            <div class="head_title"><%= data.subTitle %></div>
+            <%}else if(data.isSheQuIndex){%>
+            <h1 class="head_title"><a href="https://post.smzdm.com/" alt="社区" title="社区"><%= data.subTitle %></a></h1>
+            <%}else if(data.isBaiKeIndex){%>
+            <h1 class="head_title"><a href="https://wiki.smzdm.com/" alt="百科" title="百科"><%= data.subTitle %></a></h1>
+            <%}else{%>
+            <h1 class="head_title"><%= data.subTitle %></h1>
+            <%}%>
+            <!-- 副导航 -->
+            <%if(data.isBaiKeSub){%>
+                <ul class="header-wrap-menu">
+                    <li class="active"><a href="javascript:;" target="_blank">商品百科</a></li>
+                    <li><a href="javascript:;" target="_blank">品牌导航</a></li>
+                    <li><a href="javascript:;" target="_blank">商家导航</a></li>
+                </ul>
+            <%}%>
+            <%if(data.isSheQuSub){%>
+                <ul class="header-wrap-menu">
+                    <li class="active"><a href="javascript:;">首页</a></li>
+                    <li><a href="javascript:;" target="_blank">资讯</a></li>
+                    <li><a href="javascript:;" target="_blank">众测</a></li>
+                    <li><a href="javascript:;" target="_blank">话题</a></li>
+                    <li><a href="javascript:;" target="_blank">生活家</a></li>
+                    <!--<li class="spec-item"><a href="" target="_blank">生活家认证</a><img src="https://res.smzdm.com/pc/v1.0/dist/img/new.gif" class="gif" alt="new"></li>-->
+                </ul>
+            <%}%>
+            <!-- end 副导航 -->
+            <!-- 搜索框旁边的按钮 float:right, 所以顺序是反的 -->
+            <%if(data.isSheQuDetail){%>
+                <a href="javascript:;" target="_blank" class="search-other-btn">写篇文章</a>
+            <%}%>
+            <%if(data.isHaoJiaDetail){%>
+                <a href="javascript:;" target="_blank" class="search-other-btn">我要爆料</a>
+            <%}%>
+            <!-- 搜索框旁边的按钮 -->
+            <!-- 搜索框 -->
+            <form action="http://search.smzdm.com/" id="sub-search-form" class="<% if(data.isSheQuDetail||data.isHaoJiaDetail){ %> small-search-form <% } %>">
+                <div class="search-wrap" <%if(data.isSearchSug){ %> id="J_search_sug" <% } %>>
+                    <div class="search-input-wrap">
+                        <input type="hidden" name="c" value="home">
+                        <input type="search" name="s" autocomplete="off" class="search-input" id="J_search_input" placeholder="国民手机小米">
+                    </div>
+                    <button type="submit" class="search-submit"><i class="z-icons icon-search-o"></i></button>
+                </div>
+            </form>
+            <!-- 搜索框 end -->
+        </div>
+    </div>
+    <% }%>
+    <!-- 搜索栏 end-->
+</header>
+<div id="content" <%if(data.isLvyouMdd){ %> class="lvyou_mdd_bg" <% } %>>
+    <%if(data.isLvyouMdd){ %>
+    <div class="lvyou_mdd_city" style="background:url('//lvyouimg.zdmimg.com/201809/10/5b961af495c6a8024.jpg') no-repeat;">
+        <div class="lvyou_mdd_city_mask"></div>
+    </div>
+    <% } %>
+    <div class="content-inner">

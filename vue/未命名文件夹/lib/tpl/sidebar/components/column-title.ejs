@@ -1,0 +1,35 @@
+<!-- column流标题 -->
+<%
+/*
+调用方式：
+require('lib/tpl/column-title.ejs')({
+    data: {
+        subtitle: '精选',
+        more: '查看全部',
+    }
+})
+subtitle：栏目文字标题
+more：更多按钮的文案
+hasTab: 数组
+*/
+%>
+<div class="z-side-head z-clearfix">
+    <div class="z-side-title">
+        <% if(data.hasTab){ %>
+        <div class="side-head-tab J_side_tab">
+            <% for(var c=0;c<data.hasTab.length;c++){ %>
+            <span data-more="<%= c %>" <%if(c==0){%>class="active"<%}%>><%= data.hasTab[c]%></span>
+            <%}%>
+        </div>
+        <%} else {%>
+        <span>
+            <%= data.subtitle %>
+        </span>
+        <% } %>
+    </div>
+    <% if(data.more){ %>
+    <div class="z-side-more">
+        <a href="#" target="_blank"><%= data.more %></a>
+    </div>
+    <% } %>
+</div>

@@ -1,0 +1,29 @@
+.side-hover-nav {
+    font-size: 0;
+    margin: 14px 0;
+
+    span {
+        font-size: $fsz-larger;
+        display: inline-block;
+        margin-right: 20px;
+        padding-bottom: 6px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    span.active {
+        border-bottom: 2px solid #f04848;
+    }
+
+    a {
+        float: right;
+        color: #999;
+        line-height: 22px;
+        font-size: $fsz-default;
+
+        &:hover {
+            color: $link-blue;
+            text-decoration: underline;
+        }
+    }
+}

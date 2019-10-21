@@ -1,0 +1,122 @@
+<!-- 列表页列表顶部热门排行榜 -->
+<% var hotsTotal = 16, slickNum = eachPageNum = 5, isLvyou = isLvyou || false; %>
+<%
+var datas = [
+    'OLAY 玉兰油新生塑颜金纯面霜 轻盈无香',
+    '新生塑颜金纯面霜',
+    'OLAY 玉兰油新生塑颜金纯面霜 轻盈无香'
+];
+%>
+<style>
+    .z-icon-hot {
+        font-size: 22px;
+        color: #f04848;
+        position: absolute;
+        top: -3px;
+        right: -13px;
+    }
+</style>
+<div class="feed-top-hot">
+    <div class="z-column-head z-clearfix activity-paihang-head">
+        <div class="z-column-title"><a href="#" class="subtitle">好价排行榜</a></div>
+        <div class="feed-hot-tab J_hot_tab">
+            <span class="active" data-value="12" data-type="">全部</span>
+            <span data-value="12" data-type="yundonghuwai">时尚运动</span>
+            <span data-value="12" data-type="yundonghuwai">3C家电</span>
+            <span data-value="12" data-type="yundonghuwai">食品家居</span>
+            <span data-value="12" data-type="yundonghuwai">日百母婴</span>
+            <span data-value="12" data-type="yundonghuwai">白菜</span>
+            <span data-value="12" data-type="jiajushipin">一键海淘</span>
+        </div>
+        <a href="#" class="feed-hot-more">更多好价</a>
+    </div>
+    <div class="feed-hot-wrap">
+        <% if(typeof(isJingxuan) != 'undefined' && isJingxuan){
+            //异步加载，精选页面热门排行
+        %>
+        <div class="feed-hot-item active">
+            <div class="feed-hot-window">
+                <div class="feed-hot-list z-clearfix J_hot_slick">
+                    <% for(var i = 0; i < hotsTotal; i++) { %>
+                    <div class="feed-hot-card">
+                        <% if(i < 3){ %><span class="hot-order"><%= (i+1) %></span><% } %>
+                        <a href="#">
+                            <div class="feed-hot-pic"><img src="https://via.placeholder.com/154x154" alt=""></div>
+                            <div class="feed-hot-title"><%= datas[i%3] %></div>
+                            <span class="z-highlight">107元包邮107元包邮107元包邮</span>
+                        </a>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <% if (isLvyou) { %>
+            <script type="x-tmpl-mustache" id="J_hot_slick_tpl">
+                <div class="feed-hot-card">
+                    {{#hot_slick_order}}<span class="hot-order">{{.}}</span>{{/hot_slick_order}}
+                    <a href="{{targetUrl}}" target="_blank" onclick="dataLayer.push({'event':'23200','position':'{{hot_slick_index}}','pagetitle':'{{article_title}}'})">
+                        <div class="feed-hot-pic"><img src="{{imageUrl}}" alt="{{title}}" {{article_pic_style}}></div>
+                        <div class="feed-hot-title">{{title}}</div>
+                        <span class="z-highlight">{{subTitle}}</span>
+                    </a>
+                </div>
+            </script>
+        <% } else { %>
+        <script type="x-tmpl-mustache" id="J_hot_slick_tpl">
+            <div class="feed-hot-card">
+                {{#hot_slick_order}}<span class="hot-order">{{.}}</span>{{/hot_slick_order}}
+                <a href="{{article_url}}" target="_blank" onclick="dataLayer.push({'event':'23200','tab':'{{tabName}}','position':'{{hot_slick_index}}','pagetitle':'{{article_title}}'})">
+                    <div class="feed-hot-pic"><img src="{{article_pic}}" alt="{{article_title}}" {{article_pic_style}}></div>
+                    <div class="feed-hot-title">{{article_title}}</div>
+                    <span class="z-highlight">{{article_price}}</span>
+                </a>
+            </div>
+        </script>
+        <% } %>
+        <% }else{
+            //非异步加载，首页热门排行
+        %>
+        <div class="feed-hot-item active J_hot_slick">
+            <% for(var i = 0; i < hotsTotal; i++) { %>
+            <div class="feed-hot-window">
+                <div class="feed-hot-list z-clearfix">
+                    <div class="feed-hot-card">
+                        <% if(i < 3){ %><span class="hot-order"><%= (i+1) %></span><% } %>
+                        <a href="#">
+                            <div class="feed-hot-pic"><img src="https://via.placeholder.com/154x154" alt=""></div>
+                            <div class="feed-hot-title"><%= datas[i%3] %></div>
+                            <span class="z-highlight">107元包邮107元包邮107元包邮</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+        <% for(var j=0; j<slickNum; j++){ %>
+            <div class="feed-hot-item J_hot_slick">
+                <%
+                    var datas = [
+                        'OLAY 玉兰油新生塑颜金纯面霜 轻盈无香',
+                        '新生塑颜金纯面霜',
+                        'OLAY 玉兰油新生塑颜金纯面霜 轻盈无香'
+                    ];
+                %>
+                <% for(var a = 0; a < hotsTotal; a++) { %>
+                <div class="feed-hot-window">
+                    <div class="feed-hot-list z-clearfix">
+                        <div class="feed-hot-card">
+                            <% if(a < 3){ %><span class="hot-order"><%= (a+1) %></span><% } %>
+                            <a href="#">
+                                <div class="feed-hot-pic"><img src="https://via.placeholder.com/154x154px" alt=""></div>
+                                <div class="feed-hot-title"><%= datas[a%3] %></div>
+                                <span class="z-highlight">107元包邮107元包邮107元包邮</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        <% } %>
+        <% } %>
+    </div>
+</div>

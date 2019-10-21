@@ -1,0 +1,32 @@
+<% var noSide = noSide || false; %>
+<div class="J_feed_hot_index <% if(isJingxuan){ %>feed-hot-hits<% }else{ %>feed-hot-index<% } %> z-clearfix">
+    <%- require('./hot-tabs.ejs')({
+        isJingxuan: isJingxuan
+    }) %>
+
+    <% if (!noSide) { %>
+    <div class="feed-right-hot">
+        <% if(isJingxuan == 'new'){ %>
+            <%- require('./sidebar/side-baicai-banner.ejs')({
+            title: '热门推荐'
+        })%>
+        <%} else {%>
+            <%- require('tpl/commons/activities/activity-column-title.ejs')({
+                data: {
+                    columnTitle: '',
+                    midDot: false,
+                    subtitle: '最热原创',
+                    more: '查看更多',
+                    activity: ['activity','yuanchuang']
+                }
+            })%>
+            <div class="side-slick-wrap">
+                <div class="J_side_slick_num side-slick-num">1&nbsp;/&nbsp;5</div>
+                <div class="side-slick-window">
+                    <%- require('tpl/commons/side-yuanchuang-slick.ejs')()%>
+                </div>
+            </div>
+        <%}%>
+    </div>
+    <% } %>
+</div>

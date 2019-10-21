@@ -1,0 +1,25 @@
+.side-group {
+    border-bottom: $border;
+
+    .side-group-tab.side-hover-nav {
+        padding-left: $gap-block-inner;
+
+        span {
+            width: auto;
+            text-align: center;
+        }
+    }
+
+    .side-group-single {
+        background: $white;
+        display: none;
+    }
+
+    .side-group-single.active {
+        display: block;
+    }
+
+    .side-small-feed {
+        border-bottom: 0;
+    }
+}

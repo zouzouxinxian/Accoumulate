@@ -1,0 +1,23 @@
+<div class="side-baicai-banner">
+    <%- require('./components/column-title.ejs')({
+        data: {
+            columnTitle: '',
+            midDot: false,
+            subtitle: title
+        }
+    })%>
+    <div class="slick-number">1&nbsp;/&nbsp;6</div>
+    <div class="side-baicai-feeds J_baicai_slick">
+        <% for (var i = 0; i < 6; i++) { %>
+        <div class="slick-item">
+            <div class="feed-col-img">
+                <a href="#"><img src="http://iph.href.lu/300x167?text=竖型feed" alt=""></a>
+            </div>
+            <div class="feed-col-title">
+                <a href="">一代人的情怀，竞技赛车类玩具的智能升级版 —— 银河战甲一代人的情怀，竞技赛车类玩具的智能升级版 —— 银河战甲</a>
+            </div>
+            <div class="feed-col-des">20170411 午间档</div>
+        </div>
+        <% } %>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+<%
+for(i = 0; i < data.amount; i++) {
+%>
+    <li class="z-hor-feed feed-hor <% 
+    if(i == (data.amount - 1)) {
+        %>last-feed<%
+    } 
+    %><% if(data.expand == i){%>expand<%} %>">
+        <div class="z-feed-img">
+        <%if(data.feedType == 'zhongce2'){%>
+            <img src="http://iph.href.lu/108x108?text=好价图片" alt="">
+        <%}else{%>
+            <img src="http://iph.href.lu/108x108?text=好价图片" alt="">
+            <span>海淘</span>
+        <%}%>
+        </div>
+        <div class="z-feed-content">
+            <div class="z-feed-title">
+                <a href="#"><%= data.feeds[i].feedTitle %></a>
+            </div>
+        <%
+        if (data.feedType == 'jingxuan') {
+        %>
+            <div class="z-highlight"><%= data.feeds[i].feedPrice %></div>
+        <%
+        } else if(data.feedType == 'yuanchuang') {
+        %>
+            <div class="z-brief"><%= data.feeds[i].feedBrief %></div>
+        <%
+        }
+        %>
+            <div class="z-feed-foot">
+            <%
+            //  底部左侧判断
+            if(data.feedType == 'jingxuan') {
+            %>
+                <div class="z-feed-foot-l"><a href="" title="" class="feed-mall"><%= data.feeds[i].feedMall %></a> </div>
+            <%
+            } else if(data.feedType == 'yuanchuang' || data.feedType == 'zhongce') {
+            %>
+                <div class="z-feed-foot-l">
+                    <span class="J_zhi_like_fav" data-channel="999" data-article="888" data-type="fav"><i class="z-icon-star-empty"></i><span class="feed-number"><%= data.feeds[i].feedZan %></span></span><a href="#comments" class="z-group-data" title="评论数 213"><i class="z-icon-comment"></i><%= data.feeds[i].feedComment %></a>
+                </div>
+            <%
+            }else if(data.feedType == 'zhongce2'){
+            %>
+                <div class="z-feed-foot-l">
+                    <span class="J_zhi_like_fav" data-channel="999" data-article="888" data-type="fav"><i class="z-icon-thumb-up"></i><span class="feed-number"><%= data.feeds[i].feedZan %></span></span><a href="#comments" class="z-group-data" title="评论数 213"><i class="z-icon-comment"></i><%= data.feeds[i].feedComment %></a>
+                </div>
+
+            <%
+            }
+            else if(data.feedType == 'zhongce3'){
+            %>
+                <div class="z-feed-foot-l">
+                    <span>20分钟前</span>
+                </div>
+
+                <%
+                }
+            //  底部右侧判断
+            if(data.feedFootR == true && data.feedFootRLink == true) {
+            %>
+                <div class="z-feed-foot-r">
+                    <a href="#" class="link-direct">直达链接</a><i class="z-arrow-red-right"></i>
+                </div>
+            <%
+            } else if(data.feedFootR == true && data.feedType == 'jingxuan') {
+            %>
+                <div class="z-feed-foot-r">
+                    <span class="z-icons">值</span><span class="feed-number"><%= data.feeds[i].feedZhiPercent %></span><a href="#comments" class="z-group-data" title="评论数 213"><i class="z-icon-comment"></i><%= data.feeds[i].feedComment %></a>
+                </div>
+            <%
+            }
+            %>
+            </div>
+        </div>
+    </li>
+<%
+}
+%>

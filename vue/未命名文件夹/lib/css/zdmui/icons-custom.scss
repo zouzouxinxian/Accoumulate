@@ -1,0 +1,23 @@
+/*------------- paste end ------------*/
+/*------------- 以下为自定义的图标样式，请勿覆盖 ---------------个----*/
+i[class^="z-icon-"],
+i[class*=" z-icon-"],
+i[class^="icon-"],
+.icon-small,
+.icon-cross-lighter,
+.icon-loginright,
+.icon-logintanhao{
+    @extend .z-icons;
+}
+
+.icon-small:before {
+    content: "\e92c";
+}
+
+.icon-logintanhao:before {
+    content: "\e97d";
+}
+
+.icon-loginright:before {
+    content: "\e97a";
+}

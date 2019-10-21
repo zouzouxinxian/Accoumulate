@@ -1,0 +1,83 @@
+// 热门话题
+.side-hot-topic {
+    margin-bottom: 10px;
+
+    .column-content {
+        padding: 14px 14px 0;
+    }
+
+    .item-wrapper {
+        overflow: hidden;
+        padding-bottom: 14px;
+
+        .left-layer {
+            float: left;
+            margin-right: 14px;
+            width: 80px;
+            height: 80px;
+
+            img {
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+
+        .right-layer {
+            position: relative;
+            height: 80px;
+            overflow: hidden;
+            float: left;
+            width: 206px;
+            max-width: 206px;
+            
+            .detail-info {
+                margin-top: 32px;
+                height: 24px;
+                line-height: 24px;
+
+                .detail-item {
+                    float: left;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+            }
+
+            .title {
+                line-height: 24px;
+                width: 100%;
+                height: 24px;
+            }
+
+            .corner-btn {
+                position: relative;
+                float: right;
+                bottom: -1px;
+                display: block;
+                height: 18px;
+                line-height: 18px;
+                text-align: center;
+                font-size: 12px;
+                color: #fff;
+                border: 1px solid #f04848;
+                border-radius: 2px;
+                background: #f04848;
+                width: 48px;
+
+                i {
+                    font-size: 12px;
+                    vertical-align: -1px;
+                    margin-right: 2px;
+                }
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

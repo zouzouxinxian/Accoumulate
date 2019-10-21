@@ -1,0 +1,86 @@
+/* 搜索历史下拉列表 */
+@import "../zdmui/variables.scss";
+
+form.show-history {
+    position: relative;
+}
+
+.s-history {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    padding-top: 14px;
+    border-top: 1px solid #fff;
+    border-radius: 2px;
+    background-color: #fff;
+    z-index: 1010;
+    font-size: $fsz-default;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+    &-head {
+        position: relative;
+        padding: 0 10px 8px 10px;
+
+        a {
+            position: absolute;
+            right: 14px;
+            top: 0;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    &-list {
+        padding-bottom: 7px;
+
+        li {
+            position: relative;
+            padding: 0 10px;
+            line-height: 30px;
+            cursor: pointer;
+            height: 30px;
+
+            &.focus,
+            &:hover {
+                background-color: #f5f5f5;
+
+                span {
+                    display: block;
+                }
+            }
+
+            & > a {
+                display: inline-block;
+                width: 100%;
+                padding: 0 10px;
+                margin: 0 -10px;
+                color: #333;
+                height: 30px;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+            }
+
+            span {
+                display: none;
+                position: absolute;
+                right: 8px;
+                top: 6px;
+                width: 16px;
+                height: 16px;
+                text-align: center;
+                line-height: 15px;
+                color: #ccc;
+                z-index: 1;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+}

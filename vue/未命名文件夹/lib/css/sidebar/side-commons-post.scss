@@ -1,0 +1,22 @@
+/* 右侧挂件的公共样式 基于原创首页的挂件 */
+.detail-info {
+    .detail-item {
+        color: #999;
+        font-size: 12px;
+
+        &:first-child {
+            margin-right: 7px;
+        }
+    }
+}
+
+#feed-side {
+    .title a {
+        color: inherit;
+    }
+
+    .title:hover,
+    .foot-info:hover {
+        color: #5188a6;
+    }
+}

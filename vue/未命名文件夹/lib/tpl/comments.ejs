@@ -1,0 +1,1995 @@
+<section id="comments">
+<div class="panelTitle" id="panelTitle">评论<span class="greyNum">（<em class="commentNum">21</em>）</span></div>
+<div class="comment_sendwrap">
+    <div id="hidden_vote_div" style="display:none;"></div>
+    <p id="comment_error" class="red"></p>
+    <div class="comment_avatar">
+        <a href=" http://zhiyou.smzdm.com/user " class="userPic" target="_blank" title=" huaixiaozi ">
+            <img src="//res.smzdm.com/images/user_logo/default_avatar/5-middle.png" id="comment_avatar" width="60" height="60" alt="huaixiaozi"></a>
+        <a href=" http://zhiyou.smzdm.com/user " class="comment_nickName a_underline" target="_blank" title=" huaixiaozi ">huaixiaozi</a>
+    </div>
+    <div class="comment_sendPart">
+        <form id="commentform" class="commentform" onsubmit="return false;" method="post" action="">
+            <input type="hidden" id="type" name="type" class="quickCommentType" value="32">
+            <input type="hidden" id="pid" name="pid" value="269">
+            <input type="hidden" id="parentid" name="parentid" value="0">
+            <input type="hidden" id="vote_id" name="vote_id" value="0">
+            <input type="hidden" id="vote_type" name="vote_type" value="">
+            <input type="hidden" id="vote_group" name="vote_group" value="">
+            <div class="comment_tips zhiyou_login">
+                发表评论请
+                <a href="javascript:void(0);">登录</a>
+            </div>
+            <textarea cols="70" rows="3" name="content" class="textarea_comment" id="textareaComment" default_data="欢迎在这里留下对品牌的意见或者建议，也欢迎与值友讨论分享自己的观点和体验。"></textarea>
+            <div id="loading" style="display: none;">
+                <img style="vertical-align:middle;" src="http://www.smzdm.com/resources/public/img/loading_comment.gif"></div>
+            <div id="error" style="display:none;"></div>
+            <div class="comment_operate">
+                <div class="comment_smileBox comment_switch" style="display: block;"> <i class="icon-small"><!--[if lt IE 8]>
+                        表情
+                        <![endif]--></i>
+                    <div class="smileLayerBg" id="smiley" style="display:none;">
+                        <ul class="smileBox">
+                            <li>
+                                <a href="javascript:void(0)" class="smile147" default-data="[吃土]" title="吃土"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile148" default-data="[大白菜]" title="大白菜"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile149" default-data="[大妈三宝]" title="大妈三宝"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile150" default-data="[解毒]" title="解毒"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile151" default-data="[领券防身]" title="领券防身"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile152" default-data="[榴莲]" title="榴莲"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile153" default-data="[买买买]" title="买买买"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile154" default-data="[钱包被掏空]" title="钱包被掏空"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile155" default-data="[让你买]" title="让你买"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile156" default-data="[神价格]" title="神价格"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile157" default-data="[手慢无]" title="手慢无"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile158" default-data="[损失几个亿]" title="损失几个亿"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile159" default-data="[铁茄子]" title="铁茄子"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile160" default-data="[吐血推荐]" title="吐血推荐"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile161" default-data="[种草]" title="种草"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile162" default-data="[紫薯布丁]" title="紫薯布丁"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile163" default-data="[doge]" title="doge"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile164" default-data="[ok了]" title="ok了"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile165" default-data="[棒棒哒]" title="棒棒哒"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile166" default-data="[捂嘴]" title="捂嘴"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile167" default-data="[吃]" title="吃"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile168" default-data="[吃药]" title="吃药"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile169" default-data="[大哭]" title="大哭"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile170" default-data="[好冷啊]" title="好冷啊"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile171" default-data="[鬼脸]" title="鬼脸"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile172" default-data="[害羞了]" title="害羞了"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile173" default-data="[嘿嘿]" title="嘿嘿"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile174" default-data="[花痴]" title="花痴"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile175" default-data="[被吓到]" title="被吓到"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile176" default-data="[很惊讶]" title="很惊讶"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile177" default-data="[开花]" title="开花"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile178" default-data="[开心]" title="开心"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile179" default-data="[看不到]" title="看不到"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile180" default-data="[抠鼻孔]" title="抠鼻孔"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile181" default-data="[么么哒]" title="么么哒"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile182" default-data="[难过]" title="难过"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile183" default-data="[生气]" title="生气"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile184" default-data="[唔]" title="唔"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile185" default-data="[笑]" title="笑"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile186" default-data="[耶]" title="耶"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile187" default-data="[疑问]" title="疑问"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile188" default-data="[晕倒]" title="晕倒"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile189" default-data="[再见]" title="再见"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile190" default-data="[赞]" title="赞"></a>
+                            </li>
+                        </ul>
+                        <ul class="smileBox" style="display:none;">
+                            <li>
+                                <a href="javascript:void(0)" class="smile23" default-data="[高兴]" title="高兴"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile24" default-data="[皱眉]" title="皱眉"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile25" default-data="[阴笑]" title="阴笑"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile26" default-data="[鄙视]" title="鄙视"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile27" default-data="[邪恶]" title="邪恶"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile28" default-data="[大囧]" title="大囧"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile29" default-data="[惊喜]" title="惊喜"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile30" default-data="[小眼睛]" title="小眼睛"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile31" default-data="[小怒]" title="小怒"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile32" default-data="[无语]" title="无语"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile33" default-data="[傻笑]" title="傻笑"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile34" default-data="[期待]" title="期待"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile35" default-data="[得逞]" title="得逞"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile36" default-data="[呲牙]" title="呲牙"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile37" default-data="[喜极而泣]" title="喜极而泣"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile38" default-data="[晕死]" title="晕死"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile39" default-data="[脸红]" title="脸红"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile40" default-data="[亲亲]" title="亲亲"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile41" default-data="[狂汗]" title="狂汗"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile42" default-data="[困]" title="困"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile43" default-data="[饥饿]" title="饥饿"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile44" default-data="[得意]" title="得意"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile45" default-data="[抠鼻]" title="抠鼻"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile46" default-data="[抽烟]" title="抽烟"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile47" default-data="[内伤]" title="内伤"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile48" default-data="[口水]" title="口水"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile49" default-data="[吐]" title="吐"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile50" default-data="[流鼻涕]" title="流鼻涕"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile51" default-data="[绷带]" title="绷带"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile52" default-data="[吐舌]" title="吐舌"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile53" default-data="[口罩]" title="口罩"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile54" default-data="[不说话]" title="不说话"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile55" default-data="[不出所料]" title="不出所料"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile56" default-data="[装大款]" title="装大款"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile57" default-data="[尴尬]" title="尴尬"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile58" default-data="[喷水]" title="喷水"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile59" default-data="[喷血]" title="喷血"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile60" default-data="[咽气]" title="咽气"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile61" default-data="[哼小曲]" title="哼小曲"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile62" default-data="[吹泡泡]" title="吹泡泡"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile63" default-data="[愤怒]" title="愤怒"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile64" default-data="[冻住]" title="冻住"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile65" default-data="[赞一个]" title="赞一个"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile66" default-data="[差评]" title="差评"></a>
+                            </li>
+                        </ul>
+
+                        <ul class="smileBox" style="display:none;">
+                            <li>
+                                <a href="javascript:void(0)" class="smile67" default-data="[中指]" title="中指"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile68" default-data="[哦耶]" title="哦耶"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile69" default-data="[拳头]" title="拳头"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile70" default-data="[手掌]" title="手掌"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile71" default-data="[就是你]" title="就是你"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile72" default-data="[过来]" title="过来"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile73" default-data="[吃雪糕]" title="吃雪糕"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile74" default-data="[吃香蕉]" title="吃香蕉"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile75" default-data="[ok]" title="ok"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile76" default-data="[看不见]" title="看不见"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile77" default-data="[无所谓]" title="无所谓"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile78" default-data="[欢呼]" title="欢呼"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile79" default-data="[偷笑]" title="偷笑"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile80" default-data="[无奈]" title="无奈"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile81" default-data="[害羞]" title="害羞"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile82" default-data="[打脸]" title="打脸"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile83" default-data="[想一想]" title="想一想"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile84" default-data="[嘘]" title="嘘"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile85" default-data="[烧香]" title="烧香"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile86" default-data="[抱拳]" title="抱拳"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile87" default-data="[鼓掌]" title="鼓掌"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile88" default-data="[观察]" title="观察"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile89" default-data="[锁眉]" title="锁眉"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile90" default-data="[黑线]" title="黑线"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile91" default-data="[汗]" title="汗"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile92" default-data="[哭泣]" title="哭泣"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile93" default-data="[阴暗]" title="阴暗"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile94" default-data="[暗地观察]" title="暗地观察"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile95" default-data="[潜水]" title="潜水"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile96" default-data="[蜡烛]" title="蜡烛"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile97" default-data="[投降]" title="投降"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile98" default-data="[吐血倒地]" title="吐血倒地"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile99" default-data="[便便]" title="便便"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile100" default-data="[长草]" title="长草"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile101" default-data="[绿帽子]" title="绿帽子"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile102" default-data="[注意安全]" title="注意安全"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile103" default-data="[被砍]" title="被砍"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile104" default-data="[捶打]" title="捶打"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile105" default-data="[肿包]" title="肿包"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile106" default-data="[坐等]" title="坐等"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile107" default-data="[看热闹]" title="看热闹"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile108" default-data="[深思]" title="深思"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile109" default-data="[被监视]" title="被监视"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile110" default-data="[探头]" title="探头"></a>
+                            </li>
+                        </ul>
+
+                        <ul class="smileBox" style="display:none;">
+                            <li>
+                                <a href="javascript:void(0)" class="smile111" default-data="[看看]" title="看看"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile112" default-data="[嘿嘿嘿]" title="嘿嘿嘿"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile113" default-data="[睁大眼睛]" title="睁大眼睛"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile114" default-data="[伸舌头]" title="伸舌头"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile115" default-data="[吃骨头]" title="吃骨头"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile116" default-data="[摸摸头]" title="摸摸头"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile117" default-data="[被咬了]" title="被咬了"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile118" default-data="[献花]" title="献花"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile119" default-data="[献黄瓜]" title="献黄瓜"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile120" default-data="[献香蕉]" title="献香蕉"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile121" default-data="[举个栗子]" title="举个栗子"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile122" default-data="[该吃药了]" title="该吃药了"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile123" default-data="[卫生纸]" title="卫生纸"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile124" default-data="[＋1]" title="＋1"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile125" default-data="[烧钱]" title="烧钱"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile126" default-data="[有钱任性]" title="有钱任性"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile127" default-data="[丢骨头]" title="丢骨头"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile128" default-data="[丢手雷]" title="丢手雷"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile129" default-data="[丢肥皂]" title="丢肥皂"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile130" default-data="[飞吻]" title="飞吻"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile131" default-data="[钻被窝]" title="钻被窝"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile132" default-data="[谋杀]" title="谋杀"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile133" default-data="[大宝剑]" title="大宝剑"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile134" default-data="[手枪]" title="手枪"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile135" default-data="[鞭子]" title="鞭子"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile136" default-data="[炸药包]" title="炸药包"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile137" default-data="[自杀]" title="自杀"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile138" default-data="[中枪]" title="中枪"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile139" default-data="[击掌]" title="击掌"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile140" default-data="[扇耳光]" title="扇耳光"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile141" default-data="[砸钱]" title="砸钱"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile142" default-data="[抽打]" title="抽打"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile143" default-data="[相爱相杀]" title="相爱相杀"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile144" default-data="[斩杀]" title="斩杀"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile145" default-data="[背刺]" title="背刺"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile146" default-data="[中刀]" title="中刀"></a>
+                            </li>
+                        </ul>
+
+                        <ul class="smileBox" style="display:none;">
+                            <li>
+                                <a href="javascript:void(0)" class="smile1" default-data="[糗大了]" title="糗大了"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile2" default-data="[示爱]" title="示爱"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile3" default-data="[晕]" title="晕"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile4" default-data="[酷]" title="酷"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile5" default-data="[流泪]" title="流泪"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile6" default-data="[饿了]" title="饿了"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile7" default-data="[闭嘴]" title="闭嘴"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile8" default-data="[做鬼脸]" title="做鬼脸"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile9" default-data="[馋]" title="馋"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile10" default-data="[坏笑]" title="坏笑"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile11" default-data="[抓狂]" title="抓狂"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile12" default-data="[呵呵]" title="呵呵"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile13" default-data="[淡定]" title="淡定"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile14" default-data="[冷汗]" title="冷汗"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile15" default-data="[色]" title="色"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile16" default-data="[惊讶]" title="惊讶"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile17" default-data="[希望]" title="希望"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile18" default-data="[伤心]" title="伤心"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile19" default-data="[微笑]" title="微笑"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile20" default-data="[惊吓]" title="惊吓"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile21" default-data="[哈哈]" title="哈哈"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="smile22" default-data="[吃饭]" title="吃饭"></a>
+                            </li>
+                        </ul>
+                        <div class="smilePage">
+                            <a href="javascript:void(0)" class="current">1</a>
+                            <a href="javascript:void(0)">2</a>
+                            <a href="javascript:void(0)">3</a>
+                            <a href="javascript:void(0)">4</a>
+                            <a href="javascript:void(0)">5</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment_share">
+                    <button type="submit" class="btn_sub" id="textCommentSubmit">提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="clear"></div>
+</div>
+
+    <div class="comment_wrap" id="comment">
+        <ul class="tab_nav">
+            <li class="tab_comment_li current_item">
+                <span>最新</span>
+            </li>
+            <li class="tab_comment_li">
+                <span>最热</span>
+            </li>
+        </ul>
+        <div class="tab_info" id="commentTabBlockNew">
+            <ul class="pagination"><li class="pageup"><a href="https://post.smzdm.com/p/ax0843m3/p4/#comments"><i class="icon-angle-left-o-thin"></i></a></li><li><a href="https://post.smzdm.com/p/ax0843m3/#comments">1</a></li><li><span class="dotStyle">...</span></li><li><a href="https://post.smzdm.com/p/ax0843m3/p3/#comments">3</a></li><li><a href="https://post.smzdm.com/p/ax0843m3/p4/#comments">4</a></li><li><a href="https://post.smzdm.com/p/ax0843m3/p5/#comments" class="pageCurrent">5</a></li><li><a href="https://post.smzdm.com/p/ax0843m3/p6/#comments">6</a></li><li><a href="https://post.smzdm.com/p/ax0843m3/p7/#comments">7</a></li><li><a href="https://post.smzdm.com/p/ax0843m3/p8/#comments">8</a></li><li><span class="dotStyle">...</span></li><li><a href="https://post.smzdm.com/p/ax0843m3/p91/#comments">91</a></li><li class="pagedown"><a href="https://post.smzdm.com/p/ax0843m3/p6/#comments"><i class="icon-angle-right-o-thin"></i></a></li><li class="jumpToPage">转至<input type="text" class="input_num" id="input_num">页</li><li><a href="javascript:void(0);" class="a_jumpTo" onclick="return on_check_comment_page(91, 'https://post.smzdm.com/p/ax0843m3/', this)">GO</a></li></ul>
+            <ul class="comment_listBox">
+                <span id="li_comment_new"></span>
+                <li class="comment_list" id="li_comment_82366787" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <div class="user-box-new">
+                            <a class="user-avatar" href="https://zhiyou.smzdm.com/member/9337287411/" target="_blank">
+                                <img src="//avatarimg.smzdm.com/default/9337287411/59a46391a62e0-small.jpg">
+                            </a>
+                        </div>
+                        <span class="grey">3556楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time ">
+                            <div class="time"><meta itemprop="datePublished" content="2017-03-29">2017-03-29</div>
+                            <a class="a_underline user_name" target="_blank" href="https://zhiyou.smzdm.com/member/9337287411/" usmzdmid="9337287411"><span itemprop="author">我是西西西</span></a>                                                                    <div class="icon-medal"></div><div class="rank face-stuff-level" title="38级"><a href="https://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+                        <div class="blockquote_wrap">
+                            <blockquote class="comment_blockquote" blockquote_cid="71918558">
+                                <div class="comment_floor">1</div>
+                                <div class="comment_conWrap">
+                                    <div class="comment_con" style="height: 120px;">
+                                        <a class="a_underline user_name" target="_blank" href="https://zhiyou.smzdm.com/member/7673791049/" usmzdmid="7673791049"><span itemprop="author">王子猪猪92123</span></a>
+                                        ：<p class="p_content_71918558"><span itemprop="description">给大家总结一下 亚马逊全攻略<br><br>英国亚马逊海淘攻略:<a target="_blank" href="https://go.smzdm.com/347020cb7856b4bb/ca_aa_pl_0_71918558_0_0_0_0" rel="nofollow">https://go.smzdm.com/347020cb7856b4bb/ca_aa_pl_0_71918558_0_0_0_0</a><br>美国亚马逊海淘攻略:<a target="_blank" href="https://go.smzdm.com/34889064276db8db/ca_aa_pl_0_71918558_0_0_0_0" rel="nofollow">https://go.smzdm.com/34889064276db8db/ca_aa_pl_0_71918558_0_0_0_0</a><br>日本亚马逊海淘攻略:<a target="_blank" href="https://go.smzdm.com/15315540b9dc084f/ca_aa_pl_0_71918558_0_0_0_0" rel="nofollow">https://go.smzdm.com/15315540b9dc084f/ca_aa_pl_0_71918558_0_0_0_0</a><br>德国亚马逊海淘攻略:<a target="_blank" href="https://go.smzdm.com/5ff889994f044e3e/ca_aa_pl_0_71918558_0_0_0_0" rel="nofollow">https://go.smzdm.com/5ff889994f044e3e/ca_aa_pl_0_71918558_0_0_0_0</a> </span></p>
+                                    </div>
+                                    <a href="javascript:void(0);" class="seaAll" style="display: block;">查看全部</a>
+                                    <div class="comment_action" style="visibility: hidden;">
+                                        <a class="jubao" href="javascript:void(0);" id="report_71918558" style="display:inline-block">举报</a>
+                                        <a class="dingNum current" href="javascript:void(0);" id="cdc_support_71918558" onclick="return comment_rating_ajax(11, 1, 71918558, 74932, 82366787);">顶<span>(69)</span></a>
+                                        <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_71918558" onclick="return comment_rating_ajax(11, 0, 71918558, 74932, 82366787);">踩<span>(21)</span></a>
+                                        <a class="atta" href="javascript:void(0);" title="@王子猪猪92123">@TA</a>                                            <a class="reply" href="javascript:void(0);" id="cdc_reply_71918558">回复</a>
+                                    </div>
+                                    <div class="blankDiv"></div>
+                                </div>
+                            </blockquote>
+                            <blockquote class="comment_blockquote" blockquote_cid="78110754">
+                                <div class="comment_floor">2</div>
+                                <div class="comment_conWrap">
+                                    <div class="comment_con">
+                                        <a class="a_underline user_name" target="_blank" href="https://zhiyou.smzdm.com/member/4356551463/" usmzdmid="4356551463"><span itemprop="author">奇异魔方</span></a>
+                                        ：<p class="p_content_78110754"><span itemprop="description">mark,<span style="color:#ED7E13">@奇异魔方</span> </span></p>
+                                    </div>
+                                    <a href="javascript:void(0);" class="seaAll" style="display:none;">查看全部</a>
+                                    <div class="comment_action" style="visibility: hidden;">
+                                        <a class="jubao" href="javascript:void(0);" id="report_78110754" style="display:inline-block">举报</a>
+                                        <a class="dingNum " href="javascript:void(0);" id="cdc_support_78110754" onclick="return comment_rating_ajax(11, 1, 78110754, 74932, 82366787);">顶<span>(4)</span></a>
+                                        <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_78110754" onclick="return comment_rating_ajax(11, 0, 78110754, 74932, 82366787);">踩<span>(6)</span></a>
+                                        <a class="atta" href="javascript:void(0);" title="@奇异魔方">@TA</a>                                            <a class="reply" href="javascript:void(0);" id="cdc_reply_78110754">回复</a>
+                                    </div>
+                                    <div class="blankDiv"></div>
+                                </div>
+                            </blockquote>
+                            <div class="comment_showAll" id="new_show_comment_more_div_82366787"><a href="javascript:void(0);" title="点击展开全部" class="a_underline" onclick="show_floors(82366787,74932, 'New', 11, 1)">展开隐藏楼层</a></div>                                <blockquote class="comment_blockquote" blockquote_cid="80274759">
+                                <div class="comment_floor">6</div>
+                                <div class="comment_conWrap">
+                                    <div class="comment_con">
+                                        <a class="a_underline user_name" target="_blank" href="https://zhiyou.smzdm.com/member/7903142734/" usmzdmid="7903142734"><span itemprop="author">买不买提</span></a>
+                                        ：<p class="p_content_80274759"><span itemprop="description">okokokokokok </span></p>
+                                    </div>
+                                    <a href="javascript:void(0);" class="seaAll" style="display:none;">查看全部</a>
+                                    <div class="comment_action">
+                                        <a class="jubao" href="javascript:void(0);" id="report_80274759" style="display:inline-block">举报</a>
+                                        <a class="dingNum " href="javascript:void(0);" id="cdc_support_80274759" onclick="return comment_rating_ajax(11, 1, 80274759, 74932, 82366787);">顶<span>(0)</span></a>
+                                        <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_80274759" onclick="return comment_rating_ajax(11, 0, 80274759, 74932, 82366787);">踩<span>(1)</span></a>
+                                        <a class="atta" href="javascript:void(0);" title="@买不买提">@TA</a>                                            <a class="reply" href="javascript:void(0);" id="cdc_reply_80274759">回复</a>
+                                    </div>
+                                    <div class="blankDiv"></div>
+                                </div>
+                            </blockquote>
+                        </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_82366787"><span itemprop="description">马克一下，转运公司哪个好呀 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_82366787" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_82366787" onclick="return comment_rating_ajax(11, 1, 82366787, 74932, 82366787);">顶<span>(5)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_82366787" onclick="return comment_rating_ajax(11, 0, 82366787, 74932, 82366787);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@我是西西西">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_82366787">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+
+
+
+                <li class="comment_list" id="li_comment_77175223" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <div class="user-box-new">
+                            <a class="user-avatar" href="https://zhiyou.smzdm.com/member/7995893154/" target="_blank">
+                                <img src="//res.smzdm.com/images/user_logo/default_avatar/3-small.png">
+                            </a>
+                        </div>
+                        <span class="grey">3452楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time ">
+                            <div class="time"><meta itemprop="datePublished" content="2016-11-20">2016-11-20</div>
+                            <a class="a_underline user_name" target="_blank" href="https://zhiyou.smzdm.com/member/7995893154/" usmzdmid="7995893154"><span itemprop="author">太郎丸子</span></a>                                                                    <div class="icon-medal"></div><div class="rank face-stuff-level" title="42级"><a href="https://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+                        <div class="blockquote_wrap">
+                            <blockquote class="comment_blockquote" blockquote_cid="77044802">
+                                <div class="comment_floor">1</div>
+                                <div class="comment_conWrap">
+                                    <div class="comment_con">
+                                        <a class="a_underline user_name" target="_blank" href="https://zhiyou.smzdm.com/member/7995893154/" usmzdmid="7995893154"><span itemprop="author">太郎丸子</span></a>
+                                        ：<p class="p_content_77044802"><span itemprop="description">我只关心税费问题，直邮不是要税吗 </span></p>
+                                    </div>
+                                    <a href="javascript:void(0);" class="seaAll" style="display:none;">查看全部</a>
+                                    <div class="comment_action">
+                                        <a class="jubao" href="javascript:void(0);" id="report_77044802" style="display:inline-block">举报</a>
+                                        <a class="dingNum current" href="javascript:void(0);" id="cdc_support_77044802" onclick="return comment_rating_ajax(11, 1, 77044802, 74932, 77175223);">顶<span>(1)</span></a>
+                                        <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_77044802" onclick="return comment_rating_ajax(11, 0, 77044802, 74932, 77175223);">踩<span>(0)</span></a>
+                                        <a class="atta" href="javascript:void(0);" title="@太郎丸子">@TA</a>                                            <a class="reply" href="javascript:void(0);" id="cdc_reply_77044802">回复</a>
+                                    </div>
+                                    <div class="blankDiv"></div>
+                                </div>
+                            </blockquote>
+                            <blockquote class="comment_blockquote" blockquote_cid="77158103">
+                                <div class="comment_floor">2</div>
+                                <div class="comment_conWrap">
+                                    <div class="comment_con">
+                                        <a class="a_underline user_name" target="_blank" href="https://zhiyou.smzdm.com/member/6861608855/" usmzdmid="6861608855"><span itemprop="author">qing14121332</span></a>
+                                        ：<p class="p_content_77158103"><span itemprop="description">这个看你平常是不是有扶老奶奶过马路 </span></p>
+                                    </div>
+                                    <a href="javascript:void(0);" class="seaAll" style="display:none;">查看全部</a>
+                                    <div class="comment_action" style="visibility: hidden;">
+                                        <a class="jubao" href="javascript:void(0);" id="report_77158103" style="display:inline-block">举报</a>
+                                        <a class="dingNum " href="javascript:void(0);" id="cdc_support_77158103" onclick="return comment_rating_ajax(11, 1, 77158103, 74932, 77175223);">顶<span>(0)</span></a>
+                                        <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_77158103" onclick="return comment_rating_ajax(11, 0, 77158103, 74932, 77175223);">踩<span>(0)</span></a>
+                                        <a class="atta" href="javascript:void(0);" title="@qing14121332">@TA</a>                                            <a class="reply" href="javascript:void(0);" id="cdc_reply_77158103">回复</a>
+                                    </div>
+                                    <div class="blankDiv"></div>
+                                </div>
+                            </blockquote>
+                        </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_77175223"><span itemprop="description">呃⋯⋯所以是税很高的意思？ </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <span class="come_from">来自 <a target="_blank" href="https://www.smzdm.com/push/">iPhone 客户端</a></span>
+                                <a class="jubao" href="javascript:void(0);" id="report_77175223" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_77175223" onclick="return comment_rating_ajax(11, 1, 77175223, 74932, 77175223);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_77175223" onclick="return comment_rating_ajax(11, 0, 77175223, 74932, 77175223);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@太郎丸子">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_77175223">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+
+                <li class="comment_list" id="li_comment_61896448" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <div class="user-box-new">
+                            <a class="user-avatar" href="#" target="_blank">
+                                <img src="http://placehold.it/100x100" alt="用户名">
+                            </a>
+                            <!-- 非官方号所用结构 -->
+                            <a href="" class="user-medal-new" target="_blank">
+                                <img src="https://res.smzdm.com/images/certificate/interest_life_medal.png" alt="">
+                            </a>
+                            <!-- 官方号所用结构 二选一 -->
+                            <!--  <span class="user-medal-new">
+                                 <img src="https://res.smzdm.com/images/certificate/interest_life_medal.png" alt="">
+                             </span> -->
+                        </div>
+                        <span class="grey">21楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-12">18小时前</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                    <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896448"><span itemprop="description">rewrew </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896448" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61896448" onclick="return comment_rating_ajax(38, 1, 61896448, 6, 61896448);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896448" onclick="return comment_rating_ajax(38, 0, 61896448, 6, 61896448);">踩<span>(1)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896448">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896447" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">20楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-12">18小时前</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                    <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896447"><span itemprop="description">w43 34 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896447" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896447">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896447">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896447">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896446" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">19楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-12">18小时前</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                    <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896446"><span itemprop="description">234 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896446" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896446">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896446">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896446">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896391" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">18楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-12">23小时前</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                    <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896391"><span itemprop="description">w3r q34 24 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896391" style="display:inline-block">举报</a>
+                                <a class="dingNum" href="javascript:void(0);" id="cdc_support_61896391">顶<span>(1)</span></a>
+                                <a class="caiNum current" href="javascript:void(0);" id="cdc_oppose_61896391">踩<span>(2)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896391">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896380" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">17楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-11">05-11 10:32</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                    <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896380"><span itemprop="description"> <img src="//res.smzdm.com/images/emotions/165.png" alt="[捂嘴]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/165.png" alt="[捂嘴]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/165.png" alt="[捂嘴]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/166.png" alt="[吃]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/167.png" alt="[吃药]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/180.png" alt="[么么哒]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/179.png" alt="[抠鼻孔]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/178.png" alt="[看不到]" class="wp-smiley">  </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <span class="come_from">来自 <a target="_blank" href="http://www.smzdm.com/push/">iPhone 客户端</a></span>
+                                <a class="jubao" href="javascript:void(0);" id="report_61896380" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896380" onclick="return comment_rating_ajax(38, 1, 61896380, 6, 61896380);">顶<span>(2)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896380" onclick="return comment_rating_ajax(38, 0, 61896380, 6, 61896380);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896380">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896360" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">16楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-10">05-10 16:45</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                    <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896360"><span itemprop="description">qwe </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896360" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896360" onclick="return comment_rating_ajax(38, 1, 61896360, 6, 61896360);">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896360" onclick="return comment_rating_ajax(38, 0, 61896360, 6, 61896360);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896360">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896221" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">15楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-08">05-08 14:04</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                    <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896221"><span itemprop="description">特高含水今生今世的话 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <span class="come_from">来自 <a target="_blank" href="http://www.smzdm.com/push/">iPhone 客户端</a></span>
+                                <a class="jubao" href="javascript:void(0);" id="report_61896221" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896221" onclick="return comment_rating_ajax(38, 1, 61896221, 6, 61896221);">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896221" onclick="return comment_rating_ajax(38, 0, 61896221, 6, 61896221);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896221">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896219" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">14楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-08">05-08 14:02</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                    <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896219"><span itemprop="description">和说的话很多很多很多话 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <span class="come_from">来自 <a target="_blank" href="http://www.smzdm.com/push/">iPhone 客户端</a></span>
+                                <a class="jubao" href="javascript:void(0);" id="report_61896219" style="display:inline-block">举报</a>
+                                <a class="dingNum" href="javascript:void(0);" id="cdc_support_61896219">顶<span>(0)</span></a>
+                                <a class="caiNum current" href="javascript:void(0);" id="cdc_oppose_61896219">踩<span>(3)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896219">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896218" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">13楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-08">05-08 14:00</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                    <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896218"><span itemprop="description">测定和 i test很多很多很多 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <span class="come_from">来自 <a target="_blank" href="http://www.smzdm.com/push/">iPhone 客户端</a></span>
+                                <a class="jubao comment-report" href="javascript:void(0);" id="report_61896218" style="display:inline-block">已举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896218" onclick="return comment_rating_ajax(38, 1, 61896218, 6, 61896218);">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896218" onclick="return comment_rating_ajax(38, 0, 61896218, 6, 61896218);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896218">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896175" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">12楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:30</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                    <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896175"><span itemprop="description"><span style="color:#ED7E13">@zhz_123456</span> 回复的听到过小广场刚才 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <span class="come_from">来自 <a target="_blank" href="http://www.smzdm.com/push/">iPhone 客户端</a></span>
+                                <a class="jubao comment-report" href="javascript:void(0);" id="report_61896175" style="display:inline-block">已举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896175">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896175">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896175">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896174" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">11楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:29</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                    <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896174"><span itemprop="description"><span style="color:#ED7E13">@zhz_123456</span> 回复的听到过小广场刚才 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <span class="come_from">来自 <a target="_blank" href="http://www.smzdm.com/push/">iPhone 客户端</a></span>
+                                <a class="jubao" href="javascript:void(0);" id="report_61896174" style="display:inline-block">举报</a>
+                                <a class="dingNum" href="javascript:void(0);" id="cdc_support_61896174">顶<span>(1)</span></a>
+                                <a class="caiNum current" href="javascript:void(0);" id="cdc_oppose_61896174">踩<span>(1)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896174">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896170" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/5441906644/"><img src="//res.smzdm.com/images/user_logo/default_avatar/5-small.png" width="36" height="36"></a>
+                        <span class="grey">10楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:21</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/5441906644/" usmzdmid="5441906644"><span itemprop="author">小猪佩奇</span></a>                                                                    <div class="rank face-stuff-level" title="10级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896170"><span itemprop="description">哈哈哈会在身上 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <span class="come_from">来自 <a target="_blank" href="http://www.smzdm.com/push/">iPhone 客户端</a></span>
+                                <a class="jubao" href="javascript:void(0);" id="report_61896170" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61896170" onclick="return comment_rating_ajax(38, 1, 61896170, 6, 61896170);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896170" onclick="return comment_rating_ajax(38, 0, 61896170, 6, 61896170);">踩<span>(1)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@小猪佩奇">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896170">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896162" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">9楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:08</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                    <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896162"><span itemprop="description">哈哈哈天气 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <span class="come_from">来自 <a target="_blank" href="http://www.smzdm.com/push/">iPhone 客户端</a></span>
+                                <a class="jubao" href="javascript:void(0);" id="report_61896162" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896162" onclick="return comment_rating_ajax(38, 1, 61896162, 6, 61896162);">顶<span>(2)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896162" onclick="return comment_rating_ajax(38, 0, 61896162, 6, 61896162);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896162">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896159" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">8楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:07</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                    <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896159"><span itemprop="description">哈哈哈的时候才肯睡觉吧 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <span class="come_from">来自 <a target="_blank" href="http://www.smzdm.com/push/">iPhone 客户端</a></span>
+                                <a class="jubao" href="javascript:void(0);" id="report_61896159" style="display:inline-block">举报</a>
+                                <a class="dingNum" href="javascript:void(0);" id="cdc_support_61896159">顶<span>(0)</span></a>
+                                <a class="caiNum current" href="javascript:void(0);" id="cdc_oppose_61896159">踩<span>(1)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896159">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896158" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">7楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:06</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                    <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896158"><span itemprop="description">测试结果是好朋友 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <span class="come_from">来自 <a target="_blank" href="http://www.smzdm.com/push/">iPhone 客户端</a></span>
+                                <a class="jubao" href="javascript:void(0);" id="report_61896158" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61896158" onclick="return comment_rating_ajax(38, 1, 61896158, 6, 61896158);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896158" onclick="return comment_rating_ajax(38, 0, 61896158, 6, 61896158);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896158">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61895881" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">6楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-28">04-28 16:00</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                    <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895881"><span itemprop="description">天晴测试wap评论啦啦啦啦了 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895881" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61895881" onclick="return comment_rating_ajax(38, 1, 61895881, 6, 61895881);">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895881" onclick="return comment_rating_ajax(38, 0, 61895881, 6, 61895881);">踩<span>(10)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895881">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61895880" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">5楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-28">04-28 15:58</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                    <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895880"><span itemprop="description">哈哈哈哈哈哈哈哈哈哈大大大大啊 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895880" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61895880" onclick="return comment_rating_ajax(38, 1, 61895880, 6, 61895880);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895880" onclick="return comment_rating_ajax(38, 0, 61895880, 6, 61895880);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895880">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61895838" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">4楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-27">04-27 17:15</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                    <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895838"><span itemprop="description">发一篇视频评论看看video_id=6 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895838" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61895838" onclick="return comment_rating_ajax(38, 1, 61895838, 6, 61895838);">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895838" onclick="return comment_rating_ajax(38, 0, 61895838, 6, 61895838);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895838">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61895641" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/"><img src="//res.smzdm.com/images/user_logo/default_avatar/5-small.png" width="36" height="36"></a>
+                        <span class="grey">板凳</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-19">04-19 10:10</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/" usmzdmid="3162291237"><span itemprop="author">值友8080108787</span></a>                                                                    <span class="special-adjust"><i class="icon-xiaobian"><!--[if lt IE 8]>小编<![endif]--></i></span>
+                            <a title="生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-living" title="生活家"></i></a><a title="什么值得买第二届值友节" target="_blank" class="icon-zhiyoujie2" href="http://www.smzdm.com/zhuanti/zhiyou/2017/"><img src="https://res.smzdm.com/images/user_logo/zhiyoujie2.png" alt="什么值得买第二届值友节"></a><div class="rank face-stuff-level" title="4级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895641"><span itemprop="description">以所以利益 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895641" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61895641" onclick="return comment_rating_ajax(38, 1, 61895641, 6, 61895641);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895641" onclick="return comment_rating_ajax(38, 0, 61895641, 6, 61895641);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@值友8080108787">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895641">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61895640" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/"><img src="//res.smzdm.com/images/user_logo/default_avatar/5-small.png" width="36" height="36"></a>
+                        <span class="grey">椅子</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-19">04-19 10:10</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/" usmzdmid="3162291237"><span itemprop="author">值友8080108787</span></a>                                                                    <span class="special-adjust"><i class="icon-xiaobian"><!--[if lt IE 8]>小编<![endif]--></i></span>
+                            <a title="生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-living" title="生活家"></i></a><a title="什么值得买第二届值友节" target="_blank" class="icon-zhiyoujie2" href="http://www.smzdm.com/zhuanti/zhiyou/2017/"><img src="https://res.smzdm.com/images/user_logo/zhiyoujie2.png" alt="什么值得买第二届值友节"></a><div class="rank face-stuff-level" title="4级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895640"><span itemprop="description">以所以利益 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895640" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61895640" onclick="return comment_rating_ajax(38, 1, 61895640, 6, 61895640);">顶<span>(11)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895640" onclick="return comment_rating_ajax(38, 0, 61895640, 6, 61895640);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@值友8080108787">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895640">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61895638" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/"><img src="//res.smzdm.com/images/user_logo/default_avatar/5-small.png" width="36" height="36"></a>
+                        <span class="grey">沙发</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-19">04-19 10:10</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/" usmzdmid="3162291237"><span itemprop="author">值友8080108787</span></a>                                                                    <span class="special-adjust"><i class="icon-xiaobian"><!--[if lt IE 8]>小编<![endif]--></i></span>
+                            <a title="生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-living" title="生活家"></i></a><a title="什么值得买第二届值友节" target="_blank" class="icon-zhiyoujie2" href="http://www.smzdm.com/zhuanti/zhiyou/2017/"><img src="https://res.smzdm.com/images/user_logo/zhiyoujie2.png" alt="什么值得买第二届值友节"></a><div class="rank face-stuff-level" title="4级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895638"><span itemprop="description">以所以利益 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895638" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61895638" onclick="return comment_rating_ajax(38, 1, 61895638, 6, 61895638);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895638" onclick="return comment_rating_ajax(38, 0, 61895638, 6, 61895638);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@值友8080108787">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895638">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+
+            <ul class="pagination"><li class="pageup"><span>&lt;</span><a href="https://post.smzdm.com/p/ax0843m3/p4/#comments">上一页</a></li><li><a href="https://post.smzdm.com/p/ax0843m3/#comments">1</a></li><li><span class="dotStyle">...</span></li><li><a href="https://post.smzdm.com/p/ax0843m3/p3/#comments">3</a></li><li><a href="https://post.smzdm.com/p/ax0843m3/p4/#comments">4</a></li><li><a href="https://post.smzdm.com/p/ax0843m3/p5/#comments" class="pageCurrent">5</a></li><li><a href="https://post.smzdm.com/p/ax0843m3/p6/#comments">6</a></li><li><a href="https://post.smzdm.com/p/ax0843m3/p7/#comments">7</a></li><li><a href="https://post.smzdm.com/p/ax0843m3/p8/#comments">8</a></li><li><span class="dotStyle">...</span></li><li><a href="https://post.smzdm.com/p/ax0843m3/p91/#comments">91</a></li><li class="pagedown"><a href="https://post.smzdm.com/p/ax0843m3/p6/#comments">下一页</a><span>&gt;</span></li><li class="jumpToPage">转至<input type="text" class="input_num" id="input_num">页</li><li><a href="javascript:void(0);" class="a_jumpTo" onclick="return on_check_comment_page(91, 'https://post.smzdm.com/p/ax0843m3/', this)">GO</a></li></ul>
+        </div>
+
+
+        <div class="tab_info" id="commentTabBlockHot" style="display:none;">
+            <ul class="comment_listBox">
+                <li class="comment_list" id="li_comment_61895640" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/"><img src="//res.smzdm.com/images/user_logo/default_avatar/5-small.png" width="36" height="36"></a>
+                        <span class="grey">TOP1</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-19">04-19 10:10</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/" usmzdmid="3162291237"><span itemprop="author">值友8080108787</span></a>                                                                <span class="special-adjust"><i class="icon-xiaobian"><!--[if lt IE 8]>小编<![endif]--></i></span>
+                            <a title="生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-living" title="生活家"></i></a><a title="什么值得买第二届值友节" target="_blank" class="icon-zhiyoujie2" href="http://www.smzdm.com/zhuanti/zhiyou/2017/"><img src="https://res.smzdm.com/images/user_logo/zhiyoujie2.png" alt="什么值得买第二届值友节"></a><div class="rank face-stuff-level" title="4级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895640"><span itemprop="description">以所以利益 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895640" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61895640" onclick="return comment_rating_ajax(38, 1, 61895640, 6, 61895640);">顶<span>(11)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895640" onclick="return comment_rating_ajax(38, 0, 61895640, 6, 61895640);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@值友8080108787">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895640">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896380" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP2</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-11">05-11 10:32</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896380"><span itemprop="description"> <img src="//res.smzdm.com/images/emotions/165.png" alt="[捂嘴]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/165.png" alt="[捂嘴]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/165.png" alt="[捂嘴]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/166.png" alt="[吃]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/167.png" alt="[吃药]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/180.png" alt="[么么哒]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/179.png" alt="[抠鼻孔]" class="wp-smiley">  <img src="//res.smzdm.com/images/emotions/178.png" alt="[看不到]" class="wp-smiley">  </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896380" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896380" onclick="return comment_rating_ajax(38, 1, 61896380, 6, 61896380);">顶<span>(2)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896380" onclick="return comment_rating_ajax(38, 0, 61896380, 6, 61896380);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896380">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896162" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP3</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:08</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896162"><span itemprop="description">哈哈哈天气 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896162" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896162" onclick="return comment_rating_ajax(38, 1, 61896162, 6, 61896162);">顶<span>(2)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896162" onclick="return comment_rating_ajax(38, 0, 61896162, 6, 61896162);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896162">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896447" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP4</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-12">18小时前</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896447"><span itemprop="description">w43 34 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896447" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896447">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896447">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896447">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896446" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP5</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-12">18小时前</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896446"><span itemprop="description">234 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896446" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896446">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896446">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896446">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896360" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP6</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-10">05-10 16:45</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896360"><span itemprop="description">qwe </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896360" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896360" onclick="return comment_rating_ajax(38, 1, 61896360, 6, 61896360);">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896360" onclick="return comment_rating_ajax(38, 0, 61896360, 6, 61896360);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896360">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896221" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP7</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-08">05-08 14:04</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896221"><span itemprop="description">特高含水今生今世的话 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896221" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896221" onclick="return comment_rating_ajax(38, 1, 61896221, 6, 61896221);">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896221" onclick="return comment_rating_ajax(38, 0, 61896221, 6, 61896221);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896221">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896218" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP8</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-08">05-08 14:00</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896218"><span itemprop="description">测定和 i test很多很多很多 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao comment-report" href="javascript:void(0);" id="report_61896218" style="display:inline-block">已举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896218" onclick="return comment_rating_ajax(38, 1, 61896218, 6, 61896218);">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896218" onclick="return comment_rating_ajax(38, 0, 61896218, 6, 61896218);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896218">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896175" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP9</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:30</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896175"><span itemprop="description"><span style="color:#ED7E13">@zhz_123456</span> 回复的听到过小广场刚才 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao comment-report" href="javascript:void(0);" id="report_61896175" style="display:inline-block">已举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61896175">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896175">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896175">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61895838" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP10</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-27">04-27 17:15</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895838"><span itemprop="description">发一篇视频评论看看video_id=6 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895838" style="display:inline-block">举报</a>
+                                <a class="dingNum current" href="javascript:void(0);" id="cdc_support_61895838" onclick="return comment_rating_ajax(38, 1, 61895838, 6, 61895838);">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895838" onclick="return comment_rating_ajax(38, 0, 61895838, 6, 61895838);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895838">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896174" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP11</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:29</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896174"><span itemprop="description"><span style="color:#ED7E13">@zhz_123456</span> 回复的听到过小广场刚才 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896174" style="display:inline-block">举报</a>
+                                <a class="dingNum" href="javascript:void(0);" id="cdc_support_61896174">顶<span>(1)</span></a>
+                                <a class="caiNum current" href="javascript:void(0);" id="cdc_oppose_61896174">踩<span>(1)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896174">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896391" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP12</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-12">23小时前</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896391"><span itemprop="description">w3r q34 24 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896391" style="display:inline-block">举报</a>
+                                <a class="dingNum" href="javascript:void(0);" id="cdc_support_61896391">顶<span>(1)</span></a>
+                                <a class="caiNum current" href="javascript:void(0);" id="cdc_oppose_61896391">踩<span>(2)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896391">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61895881" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP13</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-28">04-28 16:00</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895881"><span itemprop="description">天晴测试wap评论啦啦啦啦了 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895881" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61895881" onclick="return comment_rating_ajax(38, 1, 61895881, 6, 61895881);">顶<span>(1)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895881" onclick="return comment_rating_ajax(38, 0, 61895881, 6, 61895881);">踩<span>(10)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895881">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896448" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/"><img src="//avatarimg.smzdm.com/default/7247140501/57a99be224183-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP14</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-12">18小时前</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/7247140501/" usmzdmid="7247140501"><span itemprop="author">letslets</span></a>                                                                <a title="首席生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-vip_living" title="首席生活家"></i></a><a title="淘金V计划" target="_blank" class="icon-visa" href="//zhiyou.smzdm.com/user/visa/"><img src="//res.smzdm.com/images/user_logo/visa-pc.png" alt="淘金V计划"></a><a title="什么值得买居委会" target="_blank" href="http://news.smzdm.com/p/28284/"><i class="icon-juweihui" title="什么值得买居委会"></i></a><a title="好孩子勋章" target="_blank" href="http://post.smzdm.com/p/480100/"><i class="icon-goodboy" title="好孩子勋章"></i></a><div class="rank face-stuff-level" title="87级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-crown"></i><i class="icon-biaoqing-sun"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896448"><span itemprop="description">rewrew </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896448" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61896448" onclick="return comment_rating_ajax(38, 1, 61896448, 6, 61896448);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896448" onclick="return comment_rating_ajax(38, 0, 61896448, 6, 61896448);">踩<span>(1)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@letslets">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896448">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896219" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP15</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-08">05-08 14:02</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896219"><span itemprop="description">和说的话很多很多很多话 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896219" style="display:inline-block">举报</a>
+                                <a class="dingNum" href="javascript:void(0);" id="cdc_support_61896219">顶<span>(0)</span></a>
+                                <a class="caiNum current" href="javascript:void(0);" id="cdc_oppose_61896219">踩<span>(3)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896219">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896170" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/5441906644/"><img src="//res.smzdm.com/images/user_logo/default_avatar/5-small.png" width="36" height="36"></a>
+                        <span class="grey">TOP16</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:21</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/5441906644/" usmzdmid="5441906644"><span itemprop="author">小猪佩奇</span></a>                                                                <div class="rank face-stuff-level" title="10级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-star"></i><i class="icon-biaoqing-star"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896170"><span itemprop="description">哈哈哈会在身上 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896170" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61896170" onclick="return comment_rating_ajax(38, 1, 61896170, 6, 61896170);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896170" onclick="return comment_rating_ajax(38, 0, 61896170, 6, 61896170);">踩<span>(1)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@小猪佩奇">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896170">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896159" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP17</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:07</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896159"><span itemprop="description">哈哈哈的时候才肯睡觉吧 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896159" style="display:inline-block">举报</a>
+                                <a class="dingNum" href="javascript:void(0);" id="cdc_support_61896159">顶<span>(0)</span></a>
+                                <a class="caiNum current" href="javascript:void(0);" id="cdc_oppose_61896159">踩<span>(1)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896159">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61896158" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP18</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-05-07">05-07 17:06</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61896158"><span itemprop="description">测试结果是好朋友 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61896158" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61896158" onclick="return comment_rating_ajax(38, 1, 61896158, 6, 61896158);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61896158" onclick="return comment_rating_ajax(38, 0, 61896158, 6, 61896158);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61896158">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61895880" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/"><img src="//avatarimg.smzdm.com/default/3530957405/590c2b2c20c4f-small.jpg" width="36" height="36"></a>
+                        <span class="grey">TOP19</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-28">04-28 15:58</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3530957405/" usmzdmid="3530957405"><span itemprop="author">hhhj456</span></a>                                                                <div class="rank face-stuff-level" title="8级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895880"><span itemprop="description">哈哈哈哈哈哈哈哈哈哈大大大大啊 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895880" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61895880" onclick="return comment_rating_ajax(38, 1, 61895880, 6, 61895880);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895880" onclick="return comment_rating_ajax(38, 0, 61895880, 6, 61895880);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@hhhj456">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895880">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61895638" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/"><img src="//res.smzdm.com/images/user_logo/default_avatar/5-small.png" width="36" height="36"></a>
+                        <span class="grey">TOP20</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-19">04-19 10:10</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/" usmzdmid="3162291237"><span itemprop="author">值友8080108787</span></a>                                                                <span class="special-adjust"><i class="icon-xiaobian"><!--[if lt IE 8]>小编<![endif]--></i></span>
+                            <a title="生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-living" title="生活家"></i></a><a title="什么值得买第二届值友节" target="_blank" class="icon-zhiyoujie2" href="http://www.smzdm.com/zhuanti/zhiyou/2017/"><img src="https://res.smzdm.com/images/user_logo/zhiyoujie2.png" alt="什么值得买第二届值友节"></a><div class="rank face-stuff-level" title="4级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895638"><span itemprop="description">以所以利益 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895638" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61895638" onclick="return comment_rating_ajax(38, 1, 61895638, 6, 61895638);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895638" onclick="return comment_rating_ajax(38, 0, 61895638, 6, 61895638);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@值友8080108787">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895638">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="comment_list" id="li_comment_61895641" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                    <div class="comment_avatar">
+                        <a class="userPic" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/"><img src="//res.smzdm.com/images/user_logo/default_avatar/5-small.png" width="36" height="36"></a>
+                        <span class="grey">TOP21</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time"><meta itemprop="datePublished" content="2017-04-19">04-19 10:10</div>
+                            <a class="a_underline user_name" target="_blank" href="http://zhiyou.smzdm.com/member/3162291237/" usmzdmid="3162291237"><span itemprop="author">值友8080108787</span></a>                                                                <span class="special-adjust"><i class="icon-xiaobian"><!--[if lt IE 8]>小编<![endif]--></i></span>
+                            <a title="生活家" target="_Blank" href="http://zhiyou.smzdm.com/author/"><i class="icon-living" title="生活家"></i></a><a title="什么值得买第二届值友节" target="_blank" class="icon-zhiyoujie2" href="http://www.smzdm.com/zhuanti/zhiyou/2017/"><img src="https://res.smzdm.com/images/user_logo/zhiyoujie2.png" alt="什么值得买第二届值友节"></a><div class="rank face-stuff-level" title="4级"><a href="http://zhiyou.smzdm.com/user/tequan/" target="_blank"><i class="icon-biaoqing-moon"></i></a></div>                            </div>
+
+                        <div class="comment_conWrap">
+                            <div class="comment_con">
+                                <p class="p_content_61895641"><span itemprop="description">以所以利益 </span></p>
+                            </div>
+                            <div class="comment_action">
+                                <a class="jubao" href="javascript:void(0);" id="report_61895641" style="display:inline-block">举报</a>
+                                <a class="dingNum " href="javascript:void(0);" id="cdc_support_61895641" onclick="return comment_rating_ajax(38, 1, 61895641, 6, 61895641);">顶<span>(0)</span></a>
+                                <a class="caiNum" href="javascript:void(0);" id="cdc_oppose_61895641" onclick="return comment_rating_ajax(38, 0, 61895641, 6, 61895641);">踩<span>(0)</span></a>
+                                <a class="atta" href="javascript:void(0);" title="@值友8080108787">@TA</a>                                    <a class="reply" href="javascript:void(0);" id="cdc_reply_61895641">回复</a>
+                            </div>
+                            <div class="blankDiv"></div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="quickReplyDiv" style="display:none;">
+            <div class="quickReply" id="quickReply">
+                <form id="commentquickform" class="commentquickform" onsubmit="return false;" method="post" action="">
+                    <input type="hidden" id="type" name="type" class="quickCommentType" value="38">
+                    <input type="hidden" name="comment_type" class="quickCommentType" value="38">
+                    <input type="hidden" id="pid" name="pid" value="6">
+                    <input type="hidden" id="parentid" name="parentid" class="parentid" value="0">
+                    <textarea rows="1" cols="70" id="quickComment" name="content" class="textarea_comment textarea_quick" style="height: auto;"></textarea>
+                    <div id="loadingquick" style="display: none;"><img style="vertical-align:middle;" src="//www.smzdm.com/resources/public/img/loading_comment.gif"> </div>
+                    <p id="quick_error" class="red"></p>
+                    <div class="comment_operate">
+                        <div class="comment_smileBox">
+                            <i class="icon-small" id="smileImg"><!--[if lt IE 8]>表情<![endif]--></i>
+                            <div class="smileLayerBg" id="smiley" style="display:none;">
+                                <ul class="smileBox"><li><a href="javascript:void(0)" class="smile147" default-data="[吃土]" title="吃土"></a></li><li><a href="javascript:void(0)" class="smile148" default-data="[大白菜]" title="大白菜"></a></li><li><a href="javascript:void(0)" class="smile149" default-data="[大妈三宝]" title="大妈三宝"></a></li><li><a href="javascript:void(0)" class="smile150" default-data="[解毒]" title="解毒"></a></li><li><a href="javascript:void(0)" class="smile151" default-data="[领券防身]" title="领券防身"></a></li><li><a href="javascript:void(0)" class="smile152" default-data="[榴莲]" title="榴莲"></a></li><li><a href="javascript:void(0)" class="smile153" default-data="[买买买]" title="买买买"></a></li><li><a href="javascript:void(0)" class="smile154" default-data="[钱包被掏空]" title="钱包被掏空"></a></li><li><a href="javascript:void(0)" class="smile155" default-data="[让你买]" title="让你买"></a></li><li><a href="javascript:void(0)" class="smile156" default-data="[神价格]" title="神价格"></a></li><li><a href="javascript:void(0)" class="smile157" default-data="[手慢无]" title="手慢无"></a></li><li><a href="javascript:void(0)" class="smile158" default-data="[损失几个亿]" title="损失几个亿"></a></li><li><a href="javascript:void(0)" class="smile159" default-data="[铁茄子]" title="铁茄子"></a></li><li><a href="javascript:void(0)" class="smile160" default-data="[吐血推荐]" title="吐血推荐"></a></li><li><a href="javascript:void(0)" class="smile161" default-data="[种草]" title="种草"></a></li><li><a href="javascript:void(0)" class="smile162" default-data="[紫薯布丁]" title="紫薯布丁"></a></li><li><a href="javascript:void(0)" class="smile163" default-data="[doge]" title="doge"></a></li><li><a href="javascript:void(0)" class="smile164" default-data="[ok了]" title="ok了"></a></li><li><a href="javascript:void(0)" class="smile165" default-data="[棒棒哒]" title="棒棒哒"></a></li><li><a href="javascript:void(0)" class="smile166" default-data="[捂嘴]" title="捂嘴"></a></li><li><a href="javascript:void(0)" class="smile167" default-data="[吃]" title="吃"></a></li><li><a href="javascript:void(0)" class="smile168" default-data="[吃药]" title="吃药"></a></li><li><a href="javascript:void(0)" class="smile169" default-data="[大哭]" title="大哭"></a></li><li><a href="javascript:void(0)" class="smile170" default-data="[好冷啊]" title="好冷啊"></a></li><li><a href="javascript:void(0)" class="smile171" default-data="[鬼脸]" title="鬼脸"></a></li><li><a href="javascript:void(0)" class="smile172" default-data="[害羞了]" title="害羞了"></a></li><li><a href="javascript:void(0)" class="smile173" default-data="[嘿嘿]" title="嘿嘿"></a></li><li><a href="javascript:void(0)" class="smile174" default-data="[花痴]" title="花痴"></a></li><li><a href="javascript:void(0)" class="smile175" default-data="[被吓到]" title="被吓到"></a></li><li><a href="javascript:void(0)" class="smile176" default-data="[很惊讶]" title="很惊讶"></a></li><li><a href="javascript:void(0)" class="smile177" default-data="[开花]" title="开花"></a></li><li><a href="javascript:void(0)" class="smile178" default-data="[开心]" title="开心"></a></li><li><a href="javascript:void(0)" class="smile179" default-data="[看不到]" title="看不到"></a></li><li><a href="javascript:void(0)" class="smile180" default-data="[抠鼻孔]" title="抠鼻孔"></a></li><li><a href="javascript:void(0)" class="smile181" default-data="[么么哒]" title="么么哒"></a></li><li><a href="javascript:void(0)" class="smile182" default-data="[难过]" title="难过"></a></li><li><a href="javascript:void(0)" class="smile183" default-data="[生气]" title="生气"></a></li><li><a href="javascript:void(0)" class="smile184" default-data="[唔]" title="唔"></a></li><li><a href="javascript:void(0)" class="smile185" default-data="[笑]" title="笑"></a></li><li><a href="javascript:void(0)" class="smile186" default-data="[耶]" title="耶"></a></li><li><a href="javascript:void(0)" class="smile187" default-data="[疑问]" title="疑问"></a></li><li><a href="javascript:void(0)" class="smile188" default-data="[晕倒]" title="晕倒"></a></li><li><a href="javascript:void(0)" class="smile189" default-data="[再见]" title="再见"></a></li><li><a href="javascript:void(0)" class="smile190" default-data="[赞]" title="赞"></a></li></ul><ul class="smileBox" style="display:none;"><li><a href="javascript:void(0)" class="smile23" default-data="[高兴]" title="高兴"></a></li><li><a href="javascript:void(0)" class="smile24" default-data="[皱眉]" title="皱眉"></a></li><li><a href="javascript:void(0)" class="smile25" default-data="[阴笑]" title="阴笑"></a></li><li><a href="javascript:void(0)" class="smile26" default-data="[鄙视]" title="鄙视"></a></li><li><a href="javascript:void(0)" class="smile27" default-data="[邪恶]" title="邪恶"></a></li><li><a href="javascript:void(0)" class="smile28" default-data="[大囧]" title="大囧"></a></li><li><a href="javascript:void(0)" class="smile29" default-data="[惊喜]" title="惊喜"></a></li><li><a href="javascript:void(0)" class="smile30" default-data="[小眼睛]" title="小眼睛"></a></li><li><a href="javascript:void(0)" class="smile31" default-data="[小怒]" title="小怒"></a></li><li><a href="javascript:void(0)" class="smile32" default-data="[无语]" title="无语"></a></li><li><a href="javascript:void(0)" class="smile33" default-data="[傻笑]" title="傻笑"></a></li><li><a href="javascript:void(0)" class="smile34" default-data="[期待]" title="期待"></a></li><li><a href="javascript:void(0)" class="smile35" default-data="[得逞]" title="得逞"></a></li><li><a href="javascript:void(0)" class="smile36" default-data="[呲牙]" title="呲牙"></a></li><li><a href="javascript:void(0)" class="smile37" default-data="[喜极而泣]" title="喜极而泣"></a></li><li><a href="javascript:void(0)" class="smile38" default-data="[晕死]" title="晕死"></a></li><li><a href="javascript:void(0)" class="smile39" default-data="[脸红]" title="脸红"></a></li><li><a href="javascript:void(0)" class="smile40" default-data="[亲亲]" title="亲亲"></a></li><li><a href="javascript:void(0)" class="smile41" default-data="[狂汗]" title="狂汗"></a></li><li><a href="javascript:void(0)" class="smile42" default-data="[困]" title="困"></a></li><li><a href="javascript:void(0)" class="smile43" default-data="[饥饿]" title="饥饿"></a></li><li><a href="javascript:void(0)" class="smile44" default-data="[得意]" title="得意"></a></li><li><a href="javascript:void(0)" class="smile45" default-data="[抠鼻]" title="抠鼻"></a></li><li><a href="javascript:void(0)" class="smile46" default-data="[抽烟]" title="抽烟"></a></li><li><a href="javascript:void(0)" class="smile47" default-data="[内伤]" title="内伤"></a></li><li><a href="javascript:void(0)" class="smile48" default-data="[口水]" title="口水"></a></li><li><a href="javascript:void(0)" class="smile49" default-data="[吐]" title="吐"></a></li><li><a href="javascript:void(0)" class="smile50" default-data="[流鼻涕]" title="流鼻涕"></a></li><li><a href="javascript:void(0)" class="smile51" default-data="[绷带]" title="绷带"></a></li><li><a href="javascript:void(0)" class="smile52" default-data="[吐舌]" title="吐舌"></a></li><li><a href="javascript:void(0)" class="smile53" default-data="[口罩]" title="口罩"></a></li><li><a href="javascript:void(0)" class="smile54" default-data="[不说话]" title="不说话"></a></li><li><a href="javascript:void(0)" class="smile55" default-data="[不出所料]" title="不出所料"></a></li><li><a href="javascript:void(0)" class="smile56" default-data="[装大款]" title="装大款"></a></li><li><a href="javascript:void(0)" class="smile57" default-data="[尴尬]" title="尴尬"></a></li><li><a href="javascript:void(0)" class="smile58" default-data="[喷水]" title="喷水"></a></li><li><a href="javascript:void(0)" class="smile59" default-data="[喷血]" title="喷血"></a></li><li><a href="javascript:void(0)" class="smile60" default-data="[咽气]" title="咽气"></a></li><li><a href="javascript:void(0)" class="smile61" default-data="[哼小曲]" title="哼小曲"></a></li><li><a href="javascript:void(0)" class="smile62" default-data="[吹泡泡]" title="吹泡泡"></a></li><li><a href="javascript:void(0)" class="smile63" default-data="[愤怒]" title="愤怒"></a></li><li><a href="javascript:void(0)" class="smile64" default-data="[冻住]" title="冻住"></a></li><li><a href="javascript:void(0)" class="smile65" default-data="[赞一个]" title="赞一个"></a></li><li><a href="javascript:void(0)" class="smile66" default-data="[差评]" title="差评"></a></li></ul><ul class="smileBox" style="display:none;"><li><a href="javascript:void(0)" class="smile67" default-data="[中指]" title="中指"></a></li><li><a href="javascript:void(0)" class="smile68" default-data="[哦耶]" title="哦耶"></a></li><li><a href="javascript:void(0)" class="smile69" default-data="[拳头]" title="拳头"></a></li><li><a href="javascript:void(0)" class="smile70" default-data="[手掌]" title="手掌"></a></li><li><a href="javascript:void(0)" class="smile71" default-data="[就是你]" title="就是你"></a></li><li><a href="javascript:void(0)" class="smile72" default-data="[过来]" title="过来"></a></li><li><a href="javascript:void(0)" class="smile73" default-data="[吃雪糕]" title="吃雪糕"></a></li><li><a href="javascript:void(0)" class="smile74" default-data="[吃香蕉]" title="吃香蕉"></a></li><li><a href="javascript:void(0)" class="smile75" default-data="[ok]" title="ok"></a></li><li><a href="javascript:void(0)" class="smile76" default-data="[看不见]" title="看不见"></a></li><li><a href="javascript:void(0)" class="smile77" default-data="[无所谓]" title="无所谓"></a></li><li><a href="javascript:void(0)" class="smile78" default-data="[欢呼]" title="欢呼"></a></li><li><a href="javascript:void(0)" class="smile79" default-data="[偷笑]" title="偷笑"></a></li><li><a href="javascript:void(0)" class="smile80" default-data="[无奈]" title="无奈"></a></li><li><a href="javascript:void(0)" class="smile81" default-data="[害羞]" title="害羞"></a></li><li><a href="javascript:void(0)" class="smile82" default-data="[打脸]" title="打脸"></a></li><li><a href="javascript:void(0)" class="smile83" default-data="[想一想]" title="想一想"></a></li><li><a href="javascript:void(0)" class="smile84" default-data="[嘘]" title="嘘"></a></li><li><a href="javascript:void(0)" class="smile85" default-data="[烧香]" title="烧香"></a></li><li><a href="javascript:void(0)" class="smile86" default-data="[抱拳]" title="抱拳"></a></li><li><a href="javascript:void(0)" class="smile87" default-data="[鼓掌]" title="鼓掌"></a></li><li><a href="javascript:void(0)" class="smile88" default-data="[观察]" title="观察"></a></li><li><a href="javascript:void(0)" class="smile89" default-data="[锁眉]" title="锁眉"></a></li><li><a href="javascript:void(0)" class="smile90" default-data="[黑线]" title="黑线"></a></li><li><a href="javascript:void(0)" class="smile91" default-data="[汗]" title="汗"></a></li><li><a href="javascript:void(0)" class="smile92" default-data="[哭泣]" title="哭泣"></a></li><li><a href="javascript:void(0)" class="smile93" default-data="[阴暗]" title="阴暗"></a></li><li><a href="javascript:void(0)" class="smile94" default-data="[暗地观察]" title="暗地观察"></a></li><li><a href="javascript:void(0)" class="smile95" default-data="[潜水]" title="潜水"></a></li><li><a href="javascript:void(0)" class="smile96" default-data="[蜡烛]" title="蜡烛"></a></li><li><a href="javascript:void(0)" class="smile97" default-data="[投降]" title="投降"></a></li><li><a href="javascript:void(0)" class="smile98" default-data="[吐血倒地]" title="吐血倒地"></a></li><li><a href="javascript:void(0)" class="smile99" default-data="[便便]" title="便便"></a></li><li><a href="javascript:void(0)" class="smile100" default-data="[长草]" title="长草"></a></li><li><a href="javascript:void(0)" class="smile101" default-data="[绿帽子]" title="绿帽子"></a></li><li><a href="javascript:void(0)" class="smile102" default-data="[注意安全]" title="注意安全"></a></li><li><a href="javascript:void(0)" class="smile103" default-data="[被砍]" title="被砍"></a></li><li><a href="javascript:void(0)" class="smile104" default-data="[捶打]" title="捶打"></a></li><li><a href="javascript:void(0)" class="smile105" default-data="[肿包]" title="肿包"></a></li><li><a href="javascript:void(0)" class="smile106" default-data="[坐等]" title="坐等"></a></li><li><a href="javascript:void(0)" class="smile107" default-data="[看热闹]" title="看热闹"></a></li><li><a href="javascript:void(0)" class="smile108" default-data="[深思]" title="深思"></a></li><li><a href="javascript:void(0)" class="smile109" default-data="[被监视]" title="被监视"></a></li><li><a href="javascript:void(0)" class="smile110" default-data="[探头]" title="探头"></a></li></ul><ul class="smileBox" style="display:none;"><li><a href="javascript:void(0)" class="smile111" default-data="[看看]" title="看看"></a></li><li><a href="javascript:void(0)" class="smile112" default-data="[嘿嘿嘿]" title="嘿嘿嘿"></a></li><li><a href="javascript:void(0)" class="smile113" default-data="[睁大眼睛]" title="睁大眼睛"></a></li><li><a href="javascript:void(0)" class="smile114" default-data="[伸舌头]" title="伸舌头"></a></li><li><a href="javascript:void(0)" class="smile115" default-data="[吃骨头]" title="吃骨头"></a></li><li><a href="javascript:void(0)" class="smile116" default-data="[摸摸头]" title="摸摸头"></a></li><li><a href="javascript:void(0)" class="smile117" default-data="[被咬了]" title="被咬了"></a></li><li><a href="javascript:void(0)" class="smile118" default-data="[献花]" title="献花"></a></li><li><a href="javascript:void(0)" class="smile119" default-data="[献黄瓜]" title="献黄瓜"></a></li><li><a href="javascript:void(0)" class="smile120" default-data="[献香蕉]" title="献香蕉"></a></li><li><a href="javascript:void(0)" class="smile121" default-data="[举个栗子]" title="举个栗子"></a></li><li><a href="javascript:void(0)" class="smile122" default-data="[该吃药了]" title="该吃药了"></a></li><li><a href="javascript:void(0)" class="smile123" default-data="[卫生纸]" title="卫生纸"></a></li><li><a href="javascript:void(0)" class="smile124" default-data="[＋1]" title="＋1"></a></li><li><a href="javascript:void(0)" class="smile125" default-data="[烧钱]" title="烧钱"></a></li><li><a href="javascript:void(0)" class="smile126" default-data="[有钱任性]" title="有钱任性"></a></li><li><a href="javascript:void(0)" class="smile127" default-data="[丢骨头]" title="丢骨头"></a></li><li><a href="javascript:void(0)" class="smile128" default-data="[丢手雷]" title="丢手雷"></a></li><li><a href="javascript:void(0)" class="smile129" default-data="[丢肥皂]" title="丢肥皂"></a></li><li><a href="javascript:void(0)" class="smile130" default-data="[飞吻]" title="飞吻"></a></li><li><a href="javascript:void(0)" class="smile131" default-data="[钻被窝]" title="钻被窝"></a></li><li><a href="javascript:void(0)" class="smile132" default-data="[谋杀]" title="谋杀"></a></li><li><a href="javascript:void(0)" class="smile133" default-data="[大宝剑]" title="大宝剑"></a></li><li><a href="javascript:void(0)" class="smile134" default-data="[手枪]" title="手枪"></a></li><li><a href="javascript:void(0)" class="smile135" default-data="[鞭子]" title="鞭子"></a></li><li><a href="javascript:void(0)" class="smile136" default-data="[炸药包]" title="炸药包"></a></li><li><a href="javascript:void(0)" class="smile137" default-data="[自杀]" title="自杀"></a></li><li><a href="javascript:void(0)" class="smile138" default-data="[中枪]" title="中枪"></a></li><li><a href="javascript:void(0)" class="smile139" default-data="[击掌]" title="击掌"></a></li><li><a href="javascript:void(0)" class="smile140" default-data="[扇耳光]" title="扇耳光"></a></li><li><a href="javascript:void(0)" class="smile141" default-data="[砸钱]" title="砸钱"></a></li><li><a href="javascript:void(0)" class="smile142" default-data="[抽打]" title="抽打"></a></li><li><a href="javascript:void(0)" class="smile143" default-data="[相爱相杀]" title="相爱相杀"></a></li><li><a href="javascript:void(0)" class="smile144" default-data="[斩杀]" title="斩杀"></a></li><li><a href="javascript:void(0)" class="smile145" default-data="[背刺]" title="背刺"></a></li><li><a href="javascript:void(0)" class="smile146" default-data="[中刀]" title="中刀"></a></li></ul><ul class="smileBox" style="display:none;"><li><a href="javascript:void(0)" class="smile1" default-data="[糗大了]" title="糗大了"></a></li><li><a href="javascript:void(0)" class="smile2" default-data="[示爱]" title="示爱"></a></li><li><a href="javascript:void(0)" class="smile3" default-data="[晕]" title="晕"></a></li><li><a href="javascript:void(0)" class="smile4" default-data="[酷]" title="酷"></a></li><li><a href="javascript:void(0)" class="smile5" default-data="[流泪]" title="流泪"></a></li><li><a href="javascript:void(0)" class="smile6" default-data="[饿了]" title="饿了"></a></li><li><a href="javascript:void(0)" class="smile7" default-data="[闭嘴]" title="闭嘴"></a></li><li><a href="javascript:void(0)" class="smile8" default-data="[做鬼脸]" title="做鬼脸"></a></li><li><a href="javascript:void(0)" class="smile9" default-data="[馋]" title="馋"></a></li><li><a href="javascript:void(0)" class="smile10" default-data="[坏笑]" title="坏笑"></a></li><li><a href="javascript:void(0)" class="smile11" default-data="[抓狂]" title="抓狂"></a></li><li><a href="javascript:void(0)" class="smile12" default-data="[呵呵]" title="呵呵"></a></li><li><a href="javascript:void(0)" class="smile13" default-data="[淡定]" title="淡定"></a></li><li><a href="javascript:void(0)" class="smile14" default-data="[冷汗]" title="冷汗"></a></li><li><a href="javascript:void(0)" class="smile15" default-data="[色]" title="色"></a></li><li><a href="javascript:void(0)" class="smile16" default-data="[惊讶]" title="惊讶"></a></li><li><a href="javascript:void(0)" class="smile17" default-data="[希望]" title="希望"></a></li><li><a href="javascript:void(0)" class="smile18" default-data="[伤心]" title="伤心"></a></li><li><a href="javascript:void(0)" class="smile19" default-data="[微笑]" title="微笑"></a></li><li><a href="javascript:void(0)" class="smile20" default-data="[惊吓]" title="惊吓"></a></li><li><a href="javascript:void(0)" class="smile21" default-data="[哈哈]" title="哈哈"></a></li><li><a href="javascript:void(0)" class="smile22" default-data="[吃饭]" title="吃饭"></a></li></ul><div class="smilePage"><a href="javascript:void(0)" class="current">1</a><a href="javascript:void(0)">2</a><a href="javascript:void(0)">3</a><a href="javascript:void(0)">4</a><a href="javascript:void(0)">5</a></div></div>
+                        </div>
+                        <div class="comment_share">
+                            <button type="submit" class="btn_sub" id="textCommentSubmitQuick">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- comment_wrap end -->
+</section>
+<div class="pop pop_main_box" id="pop-report" style="left: 678px; top: 346.5px;">
+    <i class="pop-close icon-times-o-thin"><!--[if lt IE 8]>x<![endif]--></i>
+    <div class="pop-title">
+        <div class="pop_name">评论举报</div>
+    </div>
+    <div class="pop-content">
+        <div class="pop_width_340">
+            <p class="pop_info">
+                请选择举报理由<br>
+                <span class="pop_jubao"><input type="radio" class="normal" id="pop_report_1" name="report"><label for="pop_report_1">广告！</label></span>
+                <span class="pop_jubao"><input type="radio" class="normal" id="pop_report_2" name="report"><label for="pop_report_2">黄牛！</label></span>
+                <span class="pop_jubao"><input type="radio" class="normal" id="pop_report_3" name="report"><label for="pop_report_3">人身攻击！</label></span>
+                <span class="pop_jubao_other"><input type="radio" id="pop_report_9" name="report"><label for="pop_report_9">其他！</label></span>
+            </p><div id="pop_report_opinion" style="display:none;">
+                <textarea cols="6" rows="80" class="textarea" style="width:318px;"></textarea>
+                <p class="grey" style="text-align:right;font-size:12px;">最少输入2个字</p>
+            </div>
+            <p></p>
+            <input id="pop_report_submit" type="submit" class="btn_login" value="确&nbsp;&nbsp;定">
+        </div>
+    </div>
+</div>
+
+<div class="pop pop_no_title" id="pop-status-success" style="left: 678px; top: 346.5px;">
+    <i class="pop-close icon-times-o-thin"><!--[if lt IE 8]>x<![endif]--></i>
+    <div class="pop-content oneLine">
+        <i class="icon-loginright"><!--[if lt IE 8]>√<![endif]--></i>
+        <p class="pop_info"></p>
+    </div>
+</div>
+
+<div class="pop pop_no_title" id="pop-status-fail" style="left: 678px; top: 346.5px;">
+    <i class="pop-close icon-times-o-thin"><!--[if lt IE 8]>x<![endif]--></i>
+    <div class="pop-content oneLine">
+        <i class="icon-logintanhao"><!--[if lt IE 8]>404<![endif]--></i>
+        <p class="pop_info"></p>
+    </div>
+</div>
+
+<div class="pop pop_no_title" id="pop-status-fail-twoLine" style="left: 678px; top: 346.5px;">
+    <i class="pop-close icon-times-o-thin"><!--[if lt IE 8]>x<![endif]--></i>
+    <div class="pop-content twoLine">
+        <i class="icon-logintanhao"><!--[if lt IE 8]>404<![endif]--></i>
+        <p class="pop_info"></p>
+    </div>
+</div>
+
+<div class="pop pop_no_title" id="pop-comment-score" style="left: 678px; top: 346.5px;">
+    <div class="pop-content oneLine">
+        <i class="icon-loginright"><!--[if lt IE 8]>√<![endif]--></i>
+        <p class="pop_info"></p>
+        <p class="pop_comment_info"></p>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        init_smile();
+        init_comment_rating();
+    };
+</script>

@@ -1,0 +1,105 @@
+.z-btn {
+    display: inline-block;
+    padding: 7px 17px;
+    user-drag: none;
+    user-select: none;
+    white-space: nowrap;
+    cursor: pointer;
+    vertical-align: middle;
+    zoom: 1;
+    line-height: 14px;
+    font-family: inherit;
+    border-radius: 2px;
+    text-decoration: none;
+
+    &:hover {
+        /*...*/
+    }
+
+    &:active {
+        /*...*/
+    }
+}
+
+.z-btn-red {
+    background-color: $red;
+    color: $white;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.z-btn-green-wechat{
+    background-color: #5cc03d;
+    color: $white;
+
+    &:hover{
+        background-color: transparentize(#5cc03d, 0.2);
+    }
+}
+
+.z-btn-blue-mobile{
+    background-color: #2aa3ef;
+    color: $white;
+
+    &:hover{
+        background-color: transparentize(#2aa3ef, 0.2);
+    }
+}
+
+/*slick 左右按钮*/
+button[class^="z-slick-btn-"]{
+    display: none!important;
+    height: 40px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    margin-top: -23px;
+    font-family: "SimSun";
+    font-size: 20px;
+    color: white;
+    background: #000;
+    opacity: 0.4;
+    &:hover{
+        opacity: 0.65;
+    }
+}
+
+.z-slick-btn-prev{
+    left: 0;
+}
+.z-slick-btn-next{
+    right: 0;
+}
+
+/* 展开更多*/
+
+.z-btn-more{
+    display: inline-block;
+    width: 50px;
+    height: 18px;
+    background-color: $white;
+    border: 1px solid $border-gray;
+    border-radius: 2px;
+    line-height: 19px;
+    text-align: center;
+    color: $text-lightgray;
+    font-size: $fsz-small;
+
+    &:hover{
+        border-color: $red!important;
+        background-color: $red;
+        color: $white;
+
+        i{
+            color: $white;
+
+            border-color: $white transparent!important;
+            &:after{
+                border-color: $red transparent!important;
+            }
+        }
+    }
+}

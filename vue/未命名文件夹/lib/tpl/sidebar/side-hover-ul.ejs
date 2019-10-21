@@ -1,0 +1,121 @@
+<%if(data.newestHot){%>
+<div class="side-faxian-ul">
+    <ul class="side-faxian-list">
+        <%for(var i = 0;i < 3;i++){%>
+        <li>
+            <a class="side-faxian-link" href="#" target="_blank">
+                <img src="https://via.placeholder.com/94x94?text=热门" alt="魅影之纱" />
+            </a>
+            <div class="side-faxian-info">
+                <span>装修季过半,是时候选墙漆了</span>
+                <span class="side-faxian-title">乳胶漆选购小攻略</span>
+            </div>
+        </li>
+        <li>
+            <a class="side-faxian-link" href="#" target="_blank">
+                <img src="https://via.placeholder.com/94x94?text=热门" alt="魅影之纱" />
+            </a>
+            <div class="side-faxian-info">
+                <span>装修季过半,是时候选墙漆了</span>
+                <span class="side-faxian-title">乳胶漆选购小攻略</span>
+            </div>
+        </li>
+        <li class="side-faxian-third">
+            <a class="side-faxian-link" href="#" target="_blank">
+                <img src="https://via.placeholder.com/94x94?text=热门" alt="魅影之纱" />
+            </a>
+            <div class="side-faxian-info">
+                <span>装修季过半,是时候选墙漆了</span>
+                <span class="side-faxian-title">乳胶漆选购小攻略</span>
+            </div>
+        </li>
+        <%}%>
+    </ul>
+</div>
+<%}%>
+<%if(data.mostHot){%>
+<div class="side-faxian-ul faxian-ul-hot">
+    <ul class="side-faxian-list">
+        <%for(var i = 0;i < 3;i++){%>
+        <li>
+            <a class="side-faxian-link" href="#" target="_blank">
+                <img src="https://via.placeholder.com/94x94?text=热门" alt="魅影之纱" />
+            </a>
+            <div class="side-faxian-info">
+                <span>装修季过半,是时候选墙漆了</span>
+                <span class="side-faxian-title">乳胶漆选购小攻略</span>
+            </div>
+        </li>
+        <li>
+            <a class="side-faxian-link" href="#" target="_blank">
+                <img src="https://via.placeholder.com/94x94?text=热门" alt="魅影之纱" />
+            </a>
+            <div class="side-faxian-info">
+                <span>装修季过半,是时候选墙漆了</span>
+                <span class="side-faxian-title">乳胶漆选购小攻略</span>
+            </div>
+        </li>
+        <li class="side-faxian-third">
+            <a class="side-faxian-link" href="#" target="_blank">
+                <img src="https://via.placeholder.com/94x94?text=热门" alt="魅影之纱" />
+            </a>
+            <div class="side-faxian-info">
+                <span>装修季过半,是时候选墙漆了</span>
+                <span class="side-faxian-title">乳胶漆选购小攻略</span>
+            </div>
+        </li>
+        <%}%>
+    </ul>
+</div>
+<%}%>
+<%if(data.youhui){%>
+<ul class="side-youhui-list">
+    <%- require('./side-item-horizontal.ejs')({
+        data: {
+            amount: 3,
+            feedType: 'zhongce',
+            feedFootR: false,
+            expand: 0,
+            feeds: [{
+                feedTitle: '一心一境—选择困难者的装修之路',
+                feedBrief: '一句话推荐',
+                feedZan: '99999',
+                feedComment: '99999'
+            }, {
+                feedTitle: 'L码起：Calvin Klein Premium系列 Double Merce 男士V领T',
+                feedBrief: '一句话推荐一句话推荐',
+                feedZan: '0',
+                feedComment: '0'
+            }, {
+                feedTitle: 'Le Creuset 铸铁珐琅锅 22cm 2.6L',
+                feedBrief: '一句话推荐一句话推荐一句话推荐',
+                feedZan: '11111',
+                feedComment: '234'
+            }]
+        }
+    })%>
+</ul>
+<%}%>
+<%if(data.xinrui){%>
+<div class="side-faxian-ul">
+    <ul class="side-faxian-list">
+        <%for(var i = 0;i < 3;i++){%>
+        <li>
+            <a class="side-faxian-link" href="#" target="_blank">
+                <img src="http://placeholder.cn/94x94?text=热门" alt="魅影之纱" />
+            </a>
+        </li>
+        <li>
+            <a class="side-faxian-link" href="#" target="_blank">
+                <img src="http://placeholder.cn/94x94?text=热门" alt="魅影之纱" />
+            </a>
+        </li>
+        <li class="side-faxian-third">
+            <a class="side-faxian-link" href="#" target="_blank">
+                <img src="http://placeholder.cn/94x94?text=热门" alt="魅影之纱" />
+            </a>
+        </li>
+        <%}%>
+    </ul>
+</div>
+<%}%>

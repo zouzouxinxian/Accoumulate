@@ -1,0 +1,25 @@
+<div class="side-hot-topic">
+    <%- require('./components/column-title.ejs')({
+        data: {
+            subtitle: '热门话题',
+            more: '查看更多'
+        }
+    })%>
+    <ul class="column-content">
+        <% for(var i = 0; i < 4; i++){ %>
+        <li class="item-wrapper z-clearfix feed-block-small">
+            <div class="left-layer z-img-center">
+                <a href=""><img src="https://via.placeholder.com/80x80" alt="话题封面"></a>
+            </div>
+            <div class="right-layer">
+                <h4 class="title z-ellipsis"><a href="">智能手机智能手机智能手智能手机智能手机智能手机机</a></h4>
+                <div class="detail-info">
+                    <span class="detail-item">1.2k内容</span>
+                    <span class="detail-item"><span class="J_focus_count">2k</span>人关注</span>
+                    <a href="javascript:;" class="corner-btn J_user_focus" data-follow="0" data-type="tag" data-cate="智能手机智能手机智能手机"><i class="icon-plus-o-thin"></i>关注</a>
+                </div>
+            </div>
+        </li>
+        <% } %>
+    </ul>
+</div>

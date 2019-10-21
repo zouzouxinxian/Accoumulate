@@ -1,0 +1,15 @@
+<%- require('lib/tpl/header.ejs')({
+    htmlWebpackPlugin: htmlWebpackPlugin,
+    data: {
+        title: 'page title',
+        isSearchSug: true
+    }
+}) %>
+    <h1>这是测试页</h1>
+    <div id="app"></div>
+    <%- require('lib/tpl/footer.ejs')({
+    htmlWebpackPlugin: htmlWebpackPlugin,
+    data: {
+        needPop: false
+    }
+}) %>

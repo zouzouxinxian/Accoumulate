@@ -1,0 +1,29 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "trying",
+  "main": "index.js",
+  "scripts": {
+    "build:debug": "rm -rf dist && webpack --mode=development --config ./build/prod.js",
+    "build": "rm -rf dist && webpack --mode=production --config ./build/prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zouxinxian",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "css-loader": "^3.2.0",
+    "glob": "^7.1.4",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.2.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 5 versions"
+  ]
+}

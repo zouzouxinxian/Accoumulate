@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--app-->
+<style>
+    .pop-container {
+        position: absolute;
+        top: 300px;
+        right: 10px;
+        display: none;
+    }
+
+    .pop-list {
+        width: 170px;
+        padding: 0 10px;
+        height: 68px;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    .pop-item {
+        position: relative;
+        width: 150px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        background: #ffbe2a;
+        -webkit-border-radius: 13px;
+        border-radius: 13px;
+        margin: 8px auto 0
+    }
+
+    .pop-item a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none
+    }
+
+    .pop-item.bounce-out {
+        -webkit-animation: bounceOut .5s linear;
+        animation: bounceOut .5s linear
+    }
+
+    .pop-item.bounce-in {
+        -webkit-animation: bounceIn .5s linear;
+        animation: bounceIn .5s linear
+    }
+
+    @-webkit-keyframes bounceOut {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+
+        to {
+            -webkit-transform: scale(.4);
+            transform: scale(.4)
+        }
+    }
+
+    @keyframes bounceOut {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+
+        to {
+            -webkit-transform: scale(.4);
+            transform: scale(.4)
+        }
+    }
+
+    @-webkit-keyframes bounceIn {
+        0% {
+            -webkit-transform: scale(.4);
+            transform: scale(.4)
+        }
+
+        80% {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1)
+        }
+
+        to {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+    }
+
+    @keyframes bounceIn {
+        0% {
+            -webkit-transform: scale(.4);
+            transform: scale(.4)
+        }
+
+        80% {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1)
+        }
+
+        to {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+    }
+</style>
+</head>
+<body>
+    <div id="module_14671" class="banner items" style="background:url('https://eimg.smzdm.com/201908/15/5d55389c1b3616278.png') no-repeat 0 0;background-size: cover;background-position: center;height: 600px;min-width: 1050px;max-width: 1920px;margin: 0 auto;"><input type="hidden" name="module_name" class="module_name" value="头图"></div>
+    <div id="module_14698" class="pure_code set-preview">
+        <div class="pop-container">
+            <ul class="pop-list">
+                <li class="pop-item">
+                    <a href="https://www.smzdm.com/p/13888579/">双耳烤盘13.8元</a>
+                </li>
+                <li class="pop-item">
+                    <a href="https://www.smzdm.com/p/13883224/">大黄杏18.65元/5斤</a>
+                </li>
+                <li class="pop-item">
+                    <a href="https://www.smzdm.com/p/13883067/">油桃16.83元/3斤</a>
+                </li>
+                <li class="pop-item">
+                    <a href="https://www.smzdm.com/p/13883034/">车载手机支架18元</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+    var bannerHeight = $('#module_14678').height();
+    $('.pop-container').css({
+        top: bannerHeight - 68 - 25,
+        display: 'block'
+    });
+
+    var height = -($('#module_14688  .commodity-flow-contain').height());
+    $('#module_14688 .mod-more').css('margin-top', height);
+
+    function handleAni () {
+        var $list = $('.pop-list');
+        var $item = $('.pop-item');
+        $item.eq(0).addClass('bounce-out');
+        $item.eq(2).addClass('bounce-in');
+        $item.animate({
+            top: '-34px'
+        }, 500, 'linear');
+    }
+    handleAni();
+    setInterval(function () {
+        var $item = $('.pop-item');
+        $item.removeClass('bounce-out').removeClass('bounce-in');
+        $item.css({
+            top: 0
+        });
+        $item.eq(0).clone().appendTo('.pop-list');
+        $item.eq(0).remove();
+        handleAni();
+    }, 3000);
+</script>
+</html>

@@ -1,0 +1,15 @@
+<div class="side-hot-yuanchuang side-single-slick">
+    <div class="feed-right-hot">
+        <%- require('./components/column-title.ejs')({
+            data: {
+                subtitle: title,
+                more: '查看更多'
+            }
+        }) %>
+        <div class="side-slick-wrap">
+            <div class="side-slick-window">
+                <%- require('./components/article-slick.ejs')() %>
+            </div>
+        </div>
+    </div>
+</div>

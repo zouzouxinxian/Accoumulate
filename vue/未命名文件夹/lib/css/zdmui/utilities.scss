@@ -1,0 +1,329 @@
+/* 清除浮动 */
+.z-clearfix {
+    @include clearfix;
+}
+
+/* 图片水平和垂直居中 */
+.z-img-center {
+    @include img-center;
+}
+
+/* 文字高亮，红色 */
+.z-highlight {
+    color: $red;
+}
+
+.z-text-lightgray {
+    color: $text-lightgray;
+}
+
+.z-text-gray {
+    color: $text-gray;
+}
+
+/* 图标数字组合 */
+.z-group-data {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+
+    i {
+        display: inline-block;
+        margin-right: 7px;
+        vertical-align: -1px;
+        font-size: 16px;
+    }
+}
+
+/* 数字文字组合 */
+.z-text-group {
+    margin-right: 20px;
+    color: $text-black;
+
+    span {
+        margin-left: 4px;
+        color: $text-lightgray;
+    }
+}
+
+/* 红色向右箭头 */
+.z-arrow-red-right {
+    @include arrow(4px, 8px, $red, $white, right);
+}
+
+.z-split {
+    display: inline-block;
+    height: $fsz-default;
+    width: 0;
+    margin: 0 7px;
+    border-right: 1px solid $white;
+    vertical-align: -2px;
+}
+
+/* 红色标记 */
+.z-red-mark,
+.z-gray-mark,
+.z-black-mark,
+.z-tag-sticky,
+.z-tag-sticky-expired,
+.z-tag-haitao,
+.z-tag-haitao-expired,
+.z-tag-guonei,
+.z-tag-guonei-expired,
+.z-tag-kuajing,
+.z-tag-kuajing-expired,
+.z-tag-baike,
+.z-tag-baike-expired,
+.z-tag-yuanchuang,
+.z-tag-yuanchuang-expired,
+.z-tag-gonggao,
+.z-tag-gonggao-expired,
+.z-tag-zhongce,
+.z-tag-zhongce-expired,
+.z-tag-pingce,
+.z-tag-pingce-expired,
+.z-tag-haowu,
+.z-tag-haowu-expired,
+.z-tag-zixun,
+.z-tag-zixun-expired,
+.z-tag-expired,
+.z-tag-soldout,
+.z-tag-time,
+.z-tag-brand {
+    display: inline-block;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 2px;
+    line-height: 19px;
+    font-size: $fsz-small;
+    vertical-align: 3px;
+}
+
+.z-red-mark {
+    background-color: $red;
+    color: $white;
+}
+
+.z-gray-mark {
+    background-color: #f0f0f0;
+    color: $text-lightgray;
+}
+
+.z-black-mark {
+    background-color: #4c4c4c;
+    color: $white;
+}
+
+.z-tag-sticky,
+.z-tag-gonggao {
+    background-color: rgba(240, 72, 72, .8);
+    color: $white;
+}
+
+.z-tag-gonggao:hover {
+    background-color: #fcdada;
+    background-color: rgba(240, 72, 72, 0.2);
+    color: $text-red;
+}
+
+.z-tag-haitao {
+    background-color: #666;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: $white;
+}
+
+.z-tag-haitao:hover {
+    background-color: #d9d9d9;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: $text-gray;
+}
+
+.z-tag-kuajing {
+    background-color: #8f35a7;
+    background-color: rgba(143, 53, 167, 0.85);
+    color: $white;
+}
+
+.z-tag-kuajing:hover {
+    background-color: #666;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #8f35a7;
+}
+
+.z-tag-guonei {
+    background-color: #f47f7f;
+    background-color: rgba(240, 72, 72, 0.7);
+    color: $white;
+}
+
+.z-tag-guonei:hover {
+    background-color: #fcdada;
+    background-color: rgba(240, 72, 72, 0.2);
+    color: $text-red;
+}
+
+.z-tag-baike {
+    background-color: #6a99d8;
+    background-color: rgba(43, 110, 200, 0.7);
+    color: $white;
+}
+
+.z-tag-yuanchuang {
+    background-color: #142866;
+    background-color: rgba(20, 40, 102, 0.7);
+    color: $white;
+}
+
+.z-tag-yuanchuang:hover {
+    background-color: #d0d4e0;
+    background-color: rgba(20, 40, 102, 0.2);
+    color: #142866;
+}
+
+.z-tag-zixun {
+    background-color: #f7c750;
+    background-color: rgba(247, 199, 80, 0.7);
+    color: $white;
+}
+
+.z-tag-zixun:hover {
+    background-color: #f7c750;
+    background-color: rgba(247, 199, 80, 0.2);
+    color: #f7c750;
+}
+
+.z-tag-haowu {
+    background-color: #585dd0;
+    background-color: rgba(88, 93, 208, 0.7);
+    color: $white;
+}
+
+.z-tag-haowu:hover {
+    background-color: rgba(88, 93, 208, 0.2);
+    color: #585dd0;
+}
+
+.z-tag-zhongce {
+    background-color: #f99366;
+    background-color: rgba(247, 101, 37, 0.7);
+    color: $white;
+}
+
+.z-tag-zhongce:hover {
+    background-color: #fee5da;
+    background-color: rgba(247, 101, 37, 0.2);
+    color: #f76525;
+}
+
+.z-tag-pingce {
+    background-color: #f99366;
+    background-color: rgba(247, 101, 37, 0.7);
+    color: $white;
+}
+
+.z-tag-pingce:hover {
+    background-color: #fee5da;
+    background-color: rgba(247, 101, 37, 0.2);
+    color: #f76525;
+}
+
+.z-tag-expired,
+.z-tag-soldout {
+    background-color: #f2f2f2;
+    color: $text-lightgray;
+}
+
+.z-tag-time {
+    background-color: $white;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: $text-gray;
+}
+
+.z-tag-brand {
+    background-color: transparentize(#066, 0.3);
+    color: $white;
+
+    &:hover {
+        background-color: transparentize(#066, 0.8);
+        color: #066;
+    }
+}
+
+/* 头像与用户名 */
+.z-avatar-group {
+    .z-avatar-pic {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: -5px;
+
+        img {
+            max-width: 100%;
+            vertical-align: top;
+        }
+    }
+
+    .z-avatar-name {
+        color: $text-gray;
+
+        &:hover {
+            color: $link-blue;
+        }
+    }
+
+    span.z-avatar-name {
+        &:hover {
+            color: $text-gray;
+        }
+    }
+}
+
+/* 单行句尾省略 */
+.z-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 热门小标记样式 */
+.z-hot-order {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    display: block;
+    height: 24px;
+    width: 24px;
+    background-color: $red;
+    line-height: 36px;
+    text-align: center;
+    font-size: $fsz-large;
+    color: $white;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+
+    &::before {
+        left: 0;
+        bottom: -10px;
+        border-color: $red transparent transparent $red;
+        border-width: 5px 12px;
+    }
+
+    &::after {
+        right: 0;
+        bottom: -10px;
+        border-color: transparent $red transparent transparent;
+        border-width: 4px 11px;
+    }
+}

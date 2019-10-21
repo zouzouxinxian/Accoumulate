@@ -1,0 +1,39 @@
+{
+  "name": "zdm-pc-global",
+  "version": "1.0.0",
+  "description": "PC website global resources",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab-team.smzdm.com/fe/pc_global.git"
+  },
+  "keywords": [
+    "smzdm"
+  ],
+  "author": "smzdm",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-inline-source": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sequence": "^1.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
+    "node-sass": "^4.12.0",
+    "postcss": "^7.0.14",
+    "precss": "^4.0.0"
+  },
+  "dependencies": {},
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "not ie <= 8"
+  ]
+}

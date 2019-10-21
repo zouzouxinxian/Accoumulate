@@ -1,0 +1,28 @@
+// 类似热门挂件样式
+.hot-global-list {
+    padding: 10px;
+
+    li {
+        width: 144px;
+        height: 32px;
+        line-height: 32px;
+        padding: 5px;
+        float: left;
+        overflow: hidden;
+        text-align: center;
+
+        a {
+            color: #666!important;
+
+            &:hover {
+                color: #5188a6!important;
+            }
+        }
+    }
+
+    &::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}

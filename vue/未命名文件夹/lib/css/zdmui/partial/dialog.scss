@@ -1,0 +1,90 @@
+$pop-width: 500px;
+
+.z-page-cover {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    z-index: 9999;
+}
+
+.z-popup {
+    width: $pop-width;
+    padding-bottom: 40px;
+    background-color: $white;
+
+    .z-popup-head {
+        position: relative;
+        height: 60px;
+        padding: 0 20px;
+        line-height: 60px;
+
+        .z-popup-name {
+            float: left;
+            font-size: $fsz-larger;
+        }
+
+        .z-popup-head-r {
+            float: right;
+            font-size: $fsz-small;
+
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .z-popup-close {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            width: 24px;
+            height: 24px;
+            background-color: $white;
+            border-radius: 50%;
+            color: $text-lightgray;
+            font-size: 16px;
+            text-align: center;
+            line-height: 24px;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+
+    .z-popup-content {
+        width: 100%;
+    }
+
+    &.login-popup {
+        .z-popup-content {
+            & > iframe {
+                display: block;
+                width: 315px;
+                height: 310px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $pop-width) {
+    .z-popup {
+        width: 96%;
+        margin: 0 auto;
+
+        &.login-popup {
+            .z-popup-content {
+                & > iframe {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+//等级徽章
+.level-bg {
+    display: inline-block;
+    width: 34px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #fff;
+    vertical-align: text-top;
+    letter-spacing: 1px;
+    text-align: center;
+    background: url("../img/level-background.png");
+}
+//推广标示
+span.stuff-tag {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 32px;
+    font-size: 12px;
+    height: 18px;
+    border-top-left-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    line-height: 20px;
+    color: white;
+    text-align: center;
+}
+//为了配合老项目下的个人中心徽章显示,因此使用老项目下的徽章命名
+
+.icon-xunzhang618,
+.icon-rightknights,
+.icon-fans,
+.icon-living,
+.icon-vip_living,
+.icon-seven,
+.icon-media,
+.icon-goodboy,
+.icon-juweihui,
+.icon-signin201609,
+.icon-jinpaibaoliaotuan,
+.icon-xiaobian,
+.icon-zcchuji,
+.icon-zczhongji,
+.icon-zhima {
+    font-size: 0;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 4px;
+    background-size: 100% !important;
+}
+
+/* 2016_618专题 xunzhang */
+.icon-xunzhang618 {
+    background: url('//res.smzdm.com/images/user_logo/xunzhang618.png') no-repeat;
+}
+
+/* 维权骑士徽章 */
+.icon-rightknights {
+    background: url('//res.smzdm.com/images/user_logo/rightknights.png') no-repeat;
+}
+
+/* fans */
+.icon-fans {
+    background: url('//res.smzdm.com/images/user_logo/fans.png') no-repeat;
+}
+
+/* living */
+.icon-living,
+.icon-vip_living {
+    background: url('//res.smzdm.com/images/user_logo/living.png') no-repeat;
+}
+
+.icon-vip_living {
+    background-image: url('//res.smzdm.com/images/user_logo/vip_living.png');
+}
+
+/* seven */
+.icon-seven {
+    background: url('//res.smzdm.com/images/user_logo/seven.png') no-repeat;
+}
+
+/* media */
+.icon-media {
+    background: url('//res.smzdm.com/images/user_logo/media.png') no-repeat;
+}
+
+/* goodboy */
+.icon-goodboy {
+    background: url('//res.smzdm.com/images/user_logo/goodboy.png') no-repeat;
+}
+
+/* juweihui */
+.icon-juweihui {
+    background: url('//res.smzdm.com/images/user_logo/juweihui.png') no-repeat;
+}
+
+/* visa勋章 值友节2017勋章 updating8勋章 7feedback勋章 */
+.icon-visa img,
+.icon-zhiyoujie2 img,
+.icon-medal618 img,
+.icon-updating8 img,
+.icon-7feedback img {
+    height: 16px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+/* 201609签到周 */
+.icon-signin201609 {
+    background: url('//res.smzdm.com/images/user_logo/signin201609.png') no-repeat;
+}
+
+.icon-jinpaibaoliaotuan {
+    background: url('//res.smzdm.com/images/user_logo/jinpaibaoliaotuan.png') no-repeat;
+}
+
+.icon-xiaobian {
+    background: url('//res.smzdm.com/images/user_logo/xiaobian.png') no-repeat;
+}
+
+.icon-zcchuji {
+    background: url('//res.smzdm.com/images/user_logo/zcchuji.png') no-repeat;
+}
+
+.icon-zczhongji {
+    background: url('//res.smzdm.com/images/user_logo/zczhongji.png') no-repeat;
+}
+
+.icon-zhima {
+    background: url('//res.smzdm.com/images/user_logo/zhima.png') no-repeat;
+}
+
+/* 全站勋章样式规范 */
+.icon-medal {
+    display: inline-block;
+    height: 16px;
+    font-size: 0;
+    vertical-align: -4px;
+}
+
+.icon-medal a {
+    display: inline-block;
+    margin-right: 4px;
+    height: 16px;
+}
+
+.icon-medal img {
+    height: 16px;
+    display: block;
+}

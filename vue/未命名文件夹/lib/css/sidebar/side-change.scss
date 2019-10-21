@@ -1,0 +1,215 @@
+.side-change {
+        display: none;
+        padding: 14px 14px 20px;
+        overflow: hidden;
+        width: 300px;
+
+        &.show {
+            display: block;
+        }
+
+        li {
+            margin-bottom: 14px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .side-max {
+                display: none;
+                font-size: 0;
+                &::after {
+                    display: block;
+                    content: "";
+                    clear: both;
+                }
+
+                & > a {
+                    float: left;
+                    margin-right: 14px;
+                    font-size: 0;
+                    width: 80px;
+                    height: 80px;
+                    text-align: center;
+                    overflow: hidden;
+
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        width: 0;
+                        height: 100%;
+                        vertical-align: middle;
+                    }
+
+                    &:hover {
+                        img {
+                            opacity: 0.9;
+                        }
+                    }
+
+                    img {
+                        vertical-align: middle;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+
+                div.side-jx-r {
+                    float: left;
+                    overflow: hidden;
+                    vertical-align: top;
+                    font-size: 14px;
+                    width: 206px;
+                    height: 80px;
+
+                    .side-line-title {
+                        display: inline-block;
+                        overflow: hidden;
+                        color: #333;
+                        line-height: 24px;
+                        height: 48px;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        // autoprefixer: off;
+                        -webkit-box-orient: vertical;
+                        // autoprefixer: on;
+                        -webkit-line-clamp: 2;
+
+                        &:hover {
+                            color: #5188a6;
+                        }
+                    }
+
+                    & > div {
+                        margin-top: 8px;
+                        line-height: 24px;
+                    }
+
+                    div.side-price {
+                        color: #f04848;
+                        font-size: 14px;
+                        white-space: nowrap;
+                        -o-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+
+                    div.side-zan-comment {
+                        font-size: 0;
+                        color: #999;
+
+                        .s-zan {
+                            display: inline-block;
+                            margin-right: 20px;
+                            color: #999;
+                            font-size: 12px;
+
+                            i {
+                                font-size: 16px;
+                                vertical-align: -2px;
+                                display: inline-block;
+                                margin-right: 7px;
+                            }
+                        }
+                        .s-comment {
+                            color: #999;
+                            display: inline-block;
+                            margin-right: 0;
+                            font-size: 12px;
+
+                            i {
+                                font-size: 16px;
+                                vertical-align: -2px;
+                                display: inline-block;
+                                margin-right: 7px;
+                            }
+                        }
+                    }
+
+                    div.side-quan-style {
+                        font-size: 12px;
+                        overflow: hidden;
+
+                        .s-number {
+                            color: #999;
+                            float: left;
+                        }
+                        .s-lingqu {
+                            float: right;
+                            color: #fff;
+                            display: inline-block;
+                            width: 50px;
+                            height: 20px;
+                            background: #f04848;
+                            border-radius: 2px;
+                            text-align: center;
+                            line-height: 20px;
+                            position: relative;
+                            top: 2px;
+
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+
+                    div.side-star-comment {
+                        font-size: 12px;
+                        color: #999;
+
+                        .s-zan {
+                            display: inline-block;
+                            margin-right: 7px;
+                        }
+
+                        .s-zan-icon {
+                            display: inline-block;
+                            margin-right: 15px;
+                            cursor: pointer;
+                        }
+
+                        .s-comment {
+                            display: inline-block;
+                        }
+
+                        span {
+                            i {
+                                font-size: 14px;
+                                position: relative;
+                                top: 1px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .side-min {
+                overflow: hidden;
+                display: block;
+                line-height: 24px;
+            }
+
+            &.active {
+                .side-max {
+                    display: block;
+                }
+
+                .side-min {
+                    display: none;
+                }
+            }
+        }
+
+        
+
+        .side-min {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
+            .side-line-title {
+                color: #333;
+            }
+        }
+}

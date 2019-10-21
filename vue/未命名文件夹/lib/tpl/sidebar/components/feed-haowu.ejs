@@ -1,0 +1,40 @@
+<%for(i = 0; i < data.amount; i++) {%>
+    <li class="z-hor-feed feed-hor <%if(i == 0){%>first-feed<%}%>">
+        <div class="z-feed-img">
+            <a href="#">
+                <img src="https://via.placeholder.com/80x80" alt="" />
+            </a>
+        </div>
+        <div class="z-feed-content">
+            <div class="z-feed-title">
+                <a href="#" target="_blank"><%= data.feeds[i].feedTitle %></a>
+            </div>
+            <div class="z-feed-foot">
+            <%if(data.feedType == 'jingxuan') {%>
+                <div class="z-feed-foot-l"><a href="" title="" class="feed-mall"><%= data.feeds[i].feedMall %></a> </div>
+            <%}else if(data.feedType == 'zhongce'){%>
+                <span class="zhi-like-fav">
+                    <i class="icon-thumb-up-o-thin"></i>
+                    <span class="feed-number"><%= data.feeds[i].feedZan %></span>
+                </span>
+                <span class="zc-comment">
+                    <i class="icon-comment-o-thin"></i>
+                    <span><%= data.feeds[i].feedComment %></span>
+                </span>
+            <%}else if(data.feedType == 'zhongce3'){%>
+                <div class="z-feed-foot-l">
+                    <span>20分钟前</span>
+                </div>
+            <%}else if(data.feedType == 'zhongce-zhushou'){%>
+                <div class="z-feed-foot-l">
+                </div>
+            <%}else if(data.feedType == 'jinrong'){%>
+                <div class="z-feed-foot-l">
+                    <a href="javascript:;" class="J_zhi_like_fav" data-article="134" data-channel="14" data-type="jinrong"><i class="z-icon-star-empty"></i><span class="feed-number">0</span></a>
+                    <a href="#comments" class="z-group-data" title="评论数 213"><i class="z-icon-comment"></i><%= data.feeds[i].feedComment %></a>
+                </div>
+            <%}%>
+            </div>
+        </div>
+    </li>
+<%}%>

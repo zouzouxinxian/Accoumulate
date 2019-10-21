@@ -1,0 +1,102 @@
+<%for(var i=0;i<pop.type.length;i++){%>
+    <%if(pop.type[i] == 'code'){%>
+    <div class="pop J_pop_code">
+        <i class="J_pop_close icon-times-o"><!--[if lt IE 8]>x<![endif]--></i>
+        <div class="pop-title">
+            优惠券
+        </div>
+        <div class="pop-content">
+            <p class="pop-info">
+                券码:&nbsp;&nbsp;<span class="J_show_code" id="code-pop1">XXXXXXXX</span>
+            </p>
+            <span class="pop-is-beiwo">优惠券已放入贝窝账户</span>
+            <div class="pop-btn-wrap">
+                <a href="javascript:;" title="点击复制" class="pop-btn J_copy" data-clipboard-action="copy" data-clipboard-target="#code-pop1">复制兑换码</a>
+                <a href="http://www.smzdm.com" target="_blank" title="立即使用" class="pop-btn">立即使用</a>
+            </div>
+        </div>
+    </div>
+    <%}else if(pop.type[i] == 'codeAndPw'){%>
+    <div class="pop J_pop_codeAndPw">
+        <i class="J_pop_close icon-times-o"><!--[if lt IE 8]>x<![endif]--></i>
+        <div class="pop-title">
+            优惠券
+        </div>
+        <div class="pop-content">
+            <p class="pop-info">
+                券码:&nbsp;&nbsp;<span class="J_show_code" id="code-pop2">XXXXXXXX</span><a href="javascript:;" title="点击复制" class="J_copy" data-clipboard-action="copy" data-clipboard-target="#code-pop2">&nbsp;&nbsp;&nbsp;&nbsp;复制</a>
+            </p>
+            <p class="pop-info">
+                密码:&nbsp;&nbsp;<span class="J_show_pw" id="pw-pop2">YYYYYYYY</span><a href="javascript:;" title="点击复制" class="J_copy" data-clipboard-action="copy" data-clipboard-target="#pw-pop2">&nbsp;&nbsp;&nbsp;&nbsp;复制</a>
+                <span class="pop-red-alert z-highlight">24小时后券码公开,请尽快使用</span>
+            </p>
+            <div class="pop-btn-wrap">
+                <a href="#" target="_blank" class="pop-btn">去使用</a>
+            </div>
+        </div>
+    </div>
+    <%}else if(pop.type[i] == 'common'){%>
+    <div class="pop J_pop_common">
+        <i class="J_pop_close icon-times-o"><!--[if lt IE 8]>x<![endif]--></i>
+        <div class="pop-title">
+            <div class="pop-name">优惠券</div>
+        </div>
+        <div class="pop-content">
+            <p class="pop-info">
+                <!--此部分应该为后端返回的data.msg格式,此处举个例子-->
+                很抱歉，您目前<span class="z-highlight">2金币</span>,金币数量不足<br/>
+                领取该券需消耗1499个金币，100个积分
+                <!--举例结束-->
+                <a target="_blank" class="pop-how" href="http://www.smzdm.com/youhui/420/">如何获取积分和金币?</a>
+            </p>
+        </div>
+    </div>
+<%}else if(pop.type[i] == 'quan1'){%>
+<div class="pop J_pop_quan1">
+    <i class="J_pop_close icon-times-o"><!--[if lt IE 8]>x<![endif]--></i>
+    <div class="pop-title">
+        优惠券
+    </div>
+    <div class="pop-content">
+        <p class="pop-info">
+            您目前<span class="z-highlight">30金币</span>,确定使用<span class="z-highlight">5金币</span>兑换
+        </p>
+        <p class="pop-info">
+            每日优鲜 全品类 满99减40元 优惠券
+        </p>
+        <div class="pop-btn-wrap">
+            <a href="#" class="pop-btn pop-cancel J_pop_close">取消</a>
+            <a href="#" data-pop="3" class="pop-btn J_pop_trigger">确认</a>
+        </div>
+    </div>
+</div>
+    <%}else if(pop.type[i] === 'focus'){%>
+    <div class="pop pop-fav J_pop_focus">
+        <i class="icon-times-o"></i>
+            <div class="pop-content">
+                <span class="fav-img">
+                    <i class="icon-exclamation-circle"></i>
+                </span>
+                <p class="pop-info-show">
+                    <span class="fav-text J_focus_text"></span>
+                </p>
+            </div>
+    </div>
+    <%}else if(pop.type[i] === 'fav'){%>
+    <div class="pop pop-fav">
+        <i class="icon-times-o"></i>
+        <div class="pop-content">
+            <span class="fav-img">
+                <i class="icon-star-o-thin"></i>
+            </span>
+            <p class="pop-info-show">
+                <span class="fav-text">已收藏</span>
+                <br>
+                <a href="#" target="_blank">去我的收藏夹
+                    <span class="icon-angle-right-o"></span>
+                </a>
+            </p>
+        </div>
+    </div>
+    <%}%>
+<%}%>

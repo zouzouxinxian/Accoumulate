@@ -1,0 +1,26 @@
+<!-- 
+    length: 显示条数
+    type: article, haojia, quan, article-icon
+ -->
+<% for(var m = 0; m < length; m++){ %>
+    <ul class="side-change J_hover_show <% if(m==0){ %> show <%}%>" >
+        <%for(var i = 0;i < 9; i++){ %>
+        <li <% if(i==0){ %>class="active"<%}%> >
+            <% if(type == 'haojia'){ %>
+                <%- require('./card-haojia.ejs')() %>
+            <% } else if (type == 'article') { %>
+                <%- require('./card-article.ejs')() %>
+            <% } else if (type == 'article-icon') { %>
+                <%- require('./card-article-icon.ejs')() %>
+            <% } else if (type == 'quan') { %>
+                <%- require('./card-quan.ejs')() %>
+            <% } else if (type == 'detail-topic') { %>
+                <%- require('./card-topic.ejs')() %>
+            <% } %>
+            <div class="side-min">
+                <a class="side-line-title" href="#" target="_blank">滴滴7月18日 121元优惠礼包滴滴7月18日 121元优惠礼包滴滴7月18日 121元优惠礼包</a>
+            </div>
+        </li>
+        <%}%>
+    </ul>
+<% } %>

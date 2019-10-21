@@ -1,0 +1,160 @@
+
+/* 生成各个上下左右四个方向的箭头
+ * $width 箭头水平跨度
+ * $height 箭头竖直方向跨度
+ * $color 箭头主体颜色
+ * $bg-color 箭头所在环境的背景颜色
+ * $direction 箭头方向，up、down、left、right（上、下、左、右）
+ */
+
+@mixin arrow($width, $height, $color, $bg-color, $direction) {
+
+    $border-width: 0 $width/2 $height $width/2;
+    $border-color: $color transparent;
+    $after-border-color: $bg-color transparent;
+    $top: 2px;
+    $left: -$width/2;
+    $margin: 0;
+
+    @if $direction == up {
+        $border-width: 0 $width/2 $height $width/2;
+        $border-color: $color transparent;
+        $after-border-color: $bg-color transparent;
+        $top: 2px;
+        $left: -$width/2;
+    }
+
+    @else if $direction == down {
+        $border-width: $height $width/2 0 $width/2;
+        $border-color: $color transparent;
+        $after-border-color: $bg-color transparent;
+        $top: -($height + 2px);
+        $left: -$width/2;
+    }
+
+    @else if $direction == left {
+        $border-width: $height/2 $width $height/2 0;
+        $border-color: transparent $color;
+        $after-border-color: transparent $bg-color;
+        $top: -$height/2;
+        $left: 2px;
+        $margin: 0 2px 0 0;
+    }
+
+    @else {
+        $border-width: $height/2 0 $height/2 $width;
+        $border-color: transparent $color;
+        $after-border-color: transparent $bg-color;
+        $top: -$height/2;
+        $left: -($width + 2px);
+        $margin: 0 0 0 2px;
+    }
+
+    position: relative;
+    border-color: $border-color;
+    margin: $margin;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: $top;
+        left: $left;
+        border-color: $after-border-color;
+    }
+
+    &,
+    &::after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-width: $border-width;
+        border-style: solid;
+    }
+}
+
+/* 水平 feed 基础布局样式 */
+@mixin hor-feed {
+    @extend .z-clearfix;
+
+    .z-feed-img {
+        position: relative;
+        float: left;
+
+        @extend .z-img-center;
+
+        span {
+            display: inline-block;
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            padding: 2px 2px 1px 3px;
+            border-radius: 3px;
+            font-size: 12px;
+            color: $text-gray;
+            background-color: $border-gray;
+        }
+    }
+
+    .z-feed-foot {
+        .z-feed-foot-l {
+            float: left;
+            position: relative;
+            font-size: 0;
+        }
+
+        .z-feed-foot-r {
+            float: right;
+        }
+    }
+}
+
+@mixin clearfix {
+    zoom: 1;
+
+    &::before,
+    &::after {
+        content: "";
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+/* 生上下两个方向箭头的样式 */
+@mixin filter-arrow($direction) {
+    .arrow-#{$direction} {
+        @include arrow(8px, 4px, $text-lightgray, $white, $direction);
+
+        margin-left: 8px;
+        vertical-align: 2px;
+    }
+}
+
+@mixin img-center {
+    text-align: center;
+    font-size: 0;
+    zoom: 1;
+
+    & img {
+        max-height: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+/* 单行超出隐藏 */
+@mixin ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

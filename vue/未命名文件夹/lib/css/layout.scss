@@ -1,0 +1,43 @@
+@import "./zdmui/variables.scss";
+@import "./zdmui/mixins.scss";
+
+/* 各个频道首页布局 */
+#content {
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.content-inner {
+    width: $main-width;
+    margin: 0 auto;
+}
+
+#sub-head {
+    margin-top: 10px;
+    margin-bottom: $gap-block-inner;
+}
+
+.index-floor {
+    margin-bottom: $gap-block;
+    padding-top: 50px; /* 解决电梯锚点定位不准的问题 */
+    margin-top: -50px;
+}
+
+.z-stuff-bar {
+    margin: 10px 0;
+}
+
+.index-top-stuff {
+    background: #f5f5f5;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1px;
+    overflow: hidden;
+}
+
+.index-top-stuff img,
+.z-stuff-bar img {
+    min-height: 90px;
+    width: 100%;
+}

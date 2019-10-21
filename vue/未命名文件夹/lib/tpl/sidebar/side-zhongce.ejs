@@ -1,0 +1,73 @@
+<%  var name = name || '';
+    var noBtn = noBtn || false;
+    var active = active || 'active';
+%>
+<div class="side-haowu-zhongce <%= active %>" data-name="<%= name %>">
+    <% if (title) { %>
+    <%- require('./components/column-title.ejs')({
+        data: {
+            columnTitle: '',
+            midDot: false,
+            subtitle: title,
+            more: '查看更多'
+        }
+    })%>
+    <% } %>
+    <div class="side-slick-wrap">
+        <div class="side-slick-window">
+            <!--侧边栏slick轮播图结构-->
+            <div class="J_side_tab_slick side-slick">
+                <% for(var i = 0; i < 5; i++) { %>
+                <a href="#" class="slick-pic" target="_blank">
+                    <img src="https://via.placeholder.com/300x136?text=Slick区域" alt="魅影之纱"/>
+                    <div class="side-slick-title">
+                        <% if (!noBtn) { %>
+                        <span class="side-slick-text">Loctek 乐歌 W72 坐站交替笔Loctek 乐歌 W72 坐站交替笔</span>
+                        <span class="z-btn z-btn-red">立即申请</span>
+                        <% } else { %>
+                        <span class="side-slick-text nobtn">Loctek 乐歌 W72 坐站交替笔Loctek 乐歌 W72 坐站交替笔</span>
+                        <% } %>
+                    </div>
+                </a>
+                <%}%>
+            </div>
+        </div>
+    </div>
+    <ul class="side-zhongce-ul">
+        <%- require('./components/feed-haowu.ejs')({
+            data: {
+                amount: 3,
+                feedType: 'zhongce',
+                feeds: [{
+                    feedTitle: '一心一境—选择困难者的装修之路',
+                    feedBrief: '一句话推荐',
+                    feedZan: '99999',
+                    feedComment: '99999'
+                }, {
+                    feedTitle: 'L码起：Calvin Klein Premium系列 Double Merce 男士V领T',
+                    feedBrief: '一句话推荐一句话推荐',
+                    feedZan: '0',
+                    feedComment: '0'
+                }, {
+                    feedTitle: 'Le Creuset 铸铁珐琅锅 22cm 2.6L',
+                    feedBrief: '一句话推荐一句话推荐一句话推荐',
+                    feedZan: '11111',
+                    feedComment: '234'
+                }, {
+                    feedTitle: 'MANKIND GROOMING BOX 男士精选护肤礼盒7件套£25',
+                    feedBrief: '一句话推荐一句话推荐一句话推荐一句话推荐',
+                    feedZan: '11',
+                    feedComment: '1'
+                }, {
+                    feedTitle: 'Nestlé 雀巢 DOLCE GUSTO GENIO2 胶囊咖啡机',
+                    feedBrief: '一句话推荐一句话推荐一句话推荐一句话推荐一句话推荐',
+                    feedZan: '324',
+                    feedComment: '32'
+                }]
+            }
+        })%>
+    </ul>
+    <% if (!title) { %>
+    <a class="find-more" href="#">查看更多</a>
+    <% } %>
+</div>

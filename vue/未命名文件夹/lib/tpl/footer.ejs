@@ -1,0 +1,29 @@
+        </div>
+    </div>
+    <!-- 底部文案和友链 -->
+    <%- require('lib/global/dist/site-footer.ejs')({
+        data: data
+    }) %>
+    <!-- 收藏 弹窗 -->
+    <%if(data.needPop){%>
+        <%- require('./pop/cover.ejs')()%>
+        <%- require('./pop/pop.ejs')({
+            pop:{
+                type: data.type,
+                title: data.title
+            }
+        })%>
+    <%}%>
+
+    <% if(data.append && data.append.length){ %>
+    <% data.append.forEach(function(item, index){ %>
+    <%- item %>
+    <% }) %>
+    <% } %>
+
+    <!-- 底部js -->
+    <% for (var chunk in htmlWebpackPlugin.options.bodys) { %>
+    <script src="<%= htmlWebpackPlugin.files.chunks[htmlWebpackPlugin.options.bodys[chunk]].entry %>"></script>
+    <% } %>
+</body>
+</html>

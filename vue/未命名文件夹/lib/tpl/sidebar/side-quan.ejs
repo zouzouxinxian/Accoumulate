@@ -1,0 +1,40 @@
+<div class="side-youhuiquan">
+    <%- require('./components/column-title.ejs')({
+        data: {
+            subtitle: title,
+            more: '查看更多',
+        }
+    })%>
+    <ul class="J_hover_show">
+        <li class="active">
+            <div class="side-youhuiquan-max">
+                <a href="#" target="_blank">
+                    <img src="https://via.placeholder.com/140x140?text=原创" />
+                </a>
+                <div>
+                    <a class="side-youhuiquan-title" href="#" target="_blank">滴滴7月18日 121元优惠礼包滴滴7月18日 121元优惠礼包滴滴7月18日 121元优惠礼包</a>
+                    <div><span>已领: 343张</span><a class="side-youhuiquan-btn" href="#" target="_blank">领取</a></div>
+                </div>
+            </div>
+            <div class="side-youhuiquan-min">
+                <a class="side-youhuiquan-title" href="#" target="_blank">滴滴7月18日 121元优惠礼包滴滴7月18日 121元优惠礼包滴滴7月18日 121元优惠礼包</a>
+            </div>
+        </li>
+        <%for(var i = 0;i<4;i++){%>
+        <li>
+            <div class="side-youhuiquan-max">
+                <a href="#" target="_blank">
+                    <img src="https://via.placeholder.com/140x140?text=原创" />
+                </a>
+                <div>
+                    <a class="side-youhuiquan-title" href="#" target="_blank">滴滴7月18日 121元优惠礼滴滴7月18日 121元优惠礼包滴滴7月18日 121元优惠礼包包</a>
+                    <div><span>已领: 343张</span><a class="side-youhuiquan-btn" href="#" target="_blank">领取</a></div>
+                </div>
+            </div>
+            <div class="side-youhuiquan-min">
+                <a class="side-youhuiquan-title" href="#" target="_blank">滴滴7月18日 121元滴滴7月18日 121元优惠礼包滴滴7月18日 121元优惠礼包优惠礼包</a>
+            </div>
+        </li>
+        <%}%>
+    </ul>
+</div>

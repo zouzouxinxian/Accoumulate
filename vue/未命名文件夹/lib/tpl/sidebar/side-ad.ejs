@@ -1,0 +1,18 @@
+ <% 
+    var classHeight = 'z-side-stuff';
+    if (isLarge) {
+        classHeight = 'z-side-stuff-large';
+    } 
+ %>
+<div class="side-stuff">
+    <div class="side-stuff-inner <%= classHeight %>">
+        <a href="#" target="_blank">
+            <%if(isLarge){%>
+            <img src="https://via.placeholder.com/300x600/ff0?text=广告位" alt="魅影之纱"/>
+            <%}else{%>
+            <img src="https://via.placeholder.com/300x250" alt="">
+            <%}%>
+            <i>广告</i>
+        </a>
+    </div>
+</div>
